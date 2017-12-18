@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DemoApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag 'home/manifest.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+  
+  </head>
+
+  <body>
+    <%= yield %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+    <%= javascript_include_tag 'home/manifest.js', 'data-turbolinks-track': 'reload' %>
+
+  </body>
+</html>

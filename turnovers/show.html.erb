@@ -1,0 +1,324 @@
+
+<% @turnover.Eaa = @turnover.spentHR_timeH + @turnover.spentHR_timeD/@turnover.daily_hourly %>
+
+<% @turnover.CostEads = @turnover.Eaa * (@turnover.sallary_HR / 30) %>
+
+<% thirty = 30 %>
+<% #All Cost Hire !  %>
+<% @turnover.Ebac = @turnover.threeSpentinterview_timeD + @turnover.threeSpentinterview_timeH / @turnover.daily_hourly %>
+<% @turnover.Ebab = @turnover.twoSpentinterviewD + @turnover.twoSpentinterview_timeH / @turnover.daily_hourly %>
+<% @turnover.Eba = @turnover.onespentinterview_timeD + @turnover.onespentinterview_timeH / @turnover.daily_hourly %>
+
+<% one = @turnover.Eba * (@turnover.oneSallary_interviewer / 30 ) %>
+<% two = @turnover.Ebab * (@turnover.twoSallary_interviewer / 30) %>
+<% three = @turnover.Ebac * (@turnover.threeSallary_interviewer/30) %>
+<% @turnover.costhire = one +  two + three %>
+
+<% #All Cost Admin !!!  %>
+
+<% @turnover.Ecc = @turnover.oneSpentAdmin_timeD + @turnover.oneSpentAdmin_timeH / @turnover.daily_hourly %>
+<% @turnover.Ecb = @turnover.twoSpentAdmin_timeD + @turnover.twoSpentAdmin_timeH / @turnover.daily_hourly %>
+<% @turnover.Eca = @turnover.threeSpentAdmin_timeD + @turnover.threeSpentAdmin_timeH / @turnover.daily_hourly %>
+
+<% one_b =  @turnover.Eca * (@turnover.oneSallary_admin/30) %>
+<% two_b = @turnover.Ecb * (@turnover.twoSallary_admin/30) %>
+<% three_b =  @turnover.Ecc * (@turnover.threeSallary_admin/30) %>
+<% @turnover.costadmin = one_b + two_b  + three_b %>
+
+<% # All Cost Magment %>
+<% @turnover.ma = @turnover.spentSupervisor_timeD + @turnover.spentSupervisor_timeH / @turnover.daily_hourly %>
+<% @turnover.costmagment = @turnover.ma * ((@turnover.sallarysupervisor.nil? ? 0 : @turnover.sallarysupervisor) / 30) %>
+
+
+<% #All Cost Adapt!  %>
+
+<% @turnover.aa = @turnover.spentEmployee_timeD + @turnover.spentEmployee_timeH / @turnover.daily_hourly %>
+<% @turnover.ab = @turnover.spentadapt_timeD + @turnover.spentadapt_timeH / @turnover.daily_hourly %>
+<% @turnover.ac = @turnover.spenttrain_timeD + @turnover.spenttrain_timeH / @turnover.daily_hourly %>
+
+
+<% one_c =  @turnover.aa * (@turnover.sallart_newer/30) %>
+<% two_c = @turnover.ab * (@turnover.Sallary_adapt/30) %>
+<% three_c =  @turnover.ac * (@turnover.sallary_trainer/30) %>
+
+<% @turnover.costadapt = one_c + two_c + three_c %>
+
+<% # All Cost LOs contract  %>
+
+<% @turnover.lca = @turnover.spentprocess_timeD + @turnover.spentprocess_timeH / @turnover.daily_hourly %>
+<% @turnover.lcb = @turnover.spentRotenLefter_timeD + @turnover.spentRotenlefter_timeH / @turnover.daily_hourly %>
+<% @turnover.lcc = @turnover.balanceLeavDay_timeD + @turnover.balanceLeavDay_timeH / @turnover.daily_hourly %>
+
+
+<% one_d =  @turnover.lca * (@turnover.sallary_adminprocess/30) %>
+<% two_d = @turnover.lcb * (@turnover.sallary_adminRotenlefter/30) %>
+<% three_d =  @turnover.lcc * (@turnover.Remaing_medical/30) %>
+
+<% @turnover.loscontract = one_d + two_d  + three_d %>
+
+<p id="notice"><%= notice %></p>
+<p>
+
+  <strong>Dirct Cost !</strong>
+
+  <%= @turnover.agancey_cost + @turnover.ads_cost + @turnover.CostEads + @turnover.costhire + @turnover.costadmin + @turnover.costmagment + @turnover.costadapt +  @turnover.loscontract %>
+</p>
+
+
+<p>
+  <strong>%</strong>
+  <%= (100 * (@turnover.agancey_cost + @turnover.ads_cost + @turnover.CostEads + @turnover.costhire + @turnover.costadmin + @turnover.costmagment + @turnover.costadapt +  @turnover.loscontract) / @turnover.sallary_left ).to_i
+  %>
+</p>
+<p>
+  <strong>Name company:</strong>
+  <%= @turnover.name_company %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @turnover.position %>
+</p>
+
+<p>
+  <strong>Sallary left:</strong>
+  <%= @turnover.sallary_left %>
+</p>
+
+<p>
+  <strong>Sallart newer:</strong>
+  <%= @turnover.sallart_newer %>
+</p>
+
+<p>
+  <strong>Years lefter:</strong>
+  <%= @turnover.years_lefter %>
+</p>
+
+<p>
+  <strong>Sallary manger:</strong>
+  <%= @turnover.sallary_manger %>
+</p>
+
+<p>
+  <strong>Daily hourly:</strong>
+  <%= @turnover.daily_hourly %>
+</p>
+
+<p>
+  <strong>Agancey cost:</strong>
+  <%= @turnover.agancey_cost %>
+</p>
+
+<p>
+  <strong>Ads cost:</strong>
+  <%= @turnover.ads_cost %>
+</p>
+
+<p>
+  <strong>Spenthr timeh:</strong>
+  <%= @turnover.spentHR_timeH %>
+</p>
+
+<p>
+  <strong>Spenthr timed:</strong>
+  <%= @turnover.spentHR_timeD %>
+</p>
+
+<p>
+  <strong>Sallary hr:</strong>
+  <%= @turnover.sallary_HR %>
+</p>
+
+<p>
+  <strong>Onespentinterview timeh:</strong>
+  <%= @turnover.onespentinterview_timeH %>
+</p>
+
+<p>
+  <strong>Onespentinterview timed:</strong>
+  <%= @turnover.onespentinterview_timeD %>
+</p>
+
+<p>
+  <strong>Onesallary interviewer:</strong>
+  <%= @turnover.oneSallary_interviewer %>
+</p>
+
+<p>
+  <strong>Twospentinterview timeh:</strong>
+  <%= @turnover.twoSpentinterview_timeH %>
+</p>
+
+<p>
+  <strong>Twospentinterviewd:</strong>
+  <%= @turnover.twoSpentinterviewD %>
+</p>
+
+<p>
+  <strong>Twosallary interviewer:</strong>
+  <%= @turnover.twoSallary_interviewer %>
+</p>
+
+<p>
+  <strong>Threespentinterview timeh:</strong>
+  <%= @turnover.threeSpentinterview_timeH %>
+</p>
+
+<p>
+  <strong>Threespentinterview timed:</strong>
+  <%= @turnover.threeSpentinterview_timeD %>
+</p>
+
+<p>
+  <strong>Threesallary interviewer:</strong>
+  <%= @turnover.threeSallary_interviewer %>
+</p>
+
+<p>
+  <strong>Onespentadmin timeh:</strong>
+  <%= @turnover.oneSpentAdmin_timeH %>
+</p>
+
+<p>
+  <strong>Onespentadmin timed:</strong>
+  <%= @turnover.oneSpentAdmin_timeD %>
+</p>
+
+<p>
+  <strong>Onesallary admin:</strong>
+  <%= @turnover.oneSallary_admin %>
+</p>
+
+<p>
+  <strong>Twospentadmin timeh:</strong>
+  <%= @turnover.twoSpentAdmin_timeH %>
+</p>
+
+<p>
+  <strong>Twospentadmin timed:</strong>
+  <%= @turnover.twoSpentAdmin_timeD %>
+</p>
+
+<p>
+  <strong>Twosallary admin:</strong>
+  <%= @turnover.twoSallary_admin %>
+</p>
+
+<p>
+  <strong>Threespentadmin timeh:</strong>
+  <%= @turnover.threeSpentAdmin_timeH %>
+</p>
+
+<p>
+  <strong>Threespentadmin timed:</strong>
+  <%= @turnover.threeSpentAdmin_timeD %>
+</p>
+
+<p>
+  <strong>Threesallary admin:</strong>
+  <%= @turnover.threeSallary_admin %>
+</p>
+
+<p>
+  <strong>Spentsupervisor timeh:</strong>
+  <%= @turnover.spentSupervisor_timeH %>
+</p>
+
+<p>
+  <strong>Spentsupervisor timed:</strong>
+  <%= @turnover.spentSupervisor_timeD %>
+</p>
+
+<p>
+  <strong>Spentemployee timeh:</strong>
+  <%= @turnover.spentEmployee_timeH %>
+</p>
+
+<p>
+  <strong>Spentemployee timed:</strong>
+  <%= @turnover.spentEmployee_timeD %>
+</p>
+
+<p>
+  <strong>Spentadapt timeh:</strong>
+  <%= @turnover.spentadapt_timeH %>
+</p>
+
+<p>
+  <strong>Spentadapt timed:</strong>
+  <%= @turnover.spentadapt_timeD %>
+</p>
+
+<p>
+  <strong>Sallary adapt:</strong>
+  <%= @turnover.Sallary_adapt %>
+</p>
+
+<p>
+  <strong>Spenttrain timeh:</strong>
+  <%= @turnover.spenttrain_timeH %>
+</p>
+
+<p>
+  <strong>Spenttrain timed:</strong>
+  <%= @turnover.spenttrain_timeD %>
+</p>
+
+<p>
+  <strong>Sallary trainer:</strong>
+  <%= @turnover.sallary_trainer %>
+</p>
+
+<p>
+  <strong>Spentprocess timeh:</strong>
+  <%= @turnover.spentprocess_timeH %>
+</p>
+
+<p>
+  <strong>Spentprocess timed:</strong>
+  <%= @turnover.spentprocess_timeD %>
+</p>
+
+<p>
+  <strong>Sallary adminprocess:</strong>
+  <%= @turnover.sallary_adminprocess %>
+</p>
+
+<p>
+  <strong>Spentrotenlefter timeh:</strong>
+  <%= @turnover.spentRotenlefter_timeH %>
+</p>
+
+<p>
+  <strong>Spentrotenlefter timed:</strong>
+  <%= @turnover.spentRotenLefter_timeD %>
+</p>
+
+<p>
+  <strong>Sallary adminrotenlefter:</strong>
+  <%= @turnover.sallary_adminRotenlefter %>
+</p>
+
+<p>
+  <strong>Balanceleavday timeh:</strong>
+  <%= @turnover.balanceLeavDay_timeH %>
+</p>
+
+<p>
+  <strong>Balanceleavday timed:</strong>
+  <%= @turnover.balanceLeavDay_timeD %>
+</p>
+
+<p>
+  <strong>Remaing medical:</strong>
+  <%= @turnover.Remaing_medical %>
+</p>
+
+<p>
+  <strong>Indemnity:</strong>
+  <%= @turnover.indemnity %>
+</p>
+
+<%= link_to 'Edit', edit_turnover_path(@turnover) %> |
+<%= link_to 'Back', turnovers_path %>

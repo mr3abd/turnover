@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @personal.name %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @personal.Date %>
+</p>
+
+<p>
+  <strong>Point:</strong>
+  <%= @personal.point %>
+</p>
+
+<p>
+  <strong>Money:</strong>
+  <%= @personal.money %>
+</p>
+
+<p>
+  <strong>Desc:</strong>
+  <%= @personal.desc %>
+</p>
+
+
+<h1><%= t :hello %></h1>
+
+
+
+
+
+<%= link_to 'Edit', edit_personal_path(@personal) %> |
+<%= link_to 'Back', personals_path %>

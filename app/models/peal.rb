@@ -1,0 +1,2 @@
+class Peal < ApplicationRecord
+end

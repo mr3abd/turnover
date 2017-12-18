@@ -1,0 +1,2 @@
+class Dashobrad < ApplicationRecord
+end

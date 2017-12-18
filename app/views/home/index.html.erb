@@ -1,0 +1,66 @@
+<div class="row ">
+       <div class="container">
+           <div class="col l12 s12 m12 nav">
+               <div class="left col l6 m6 s12">
+                   <a href="#">
+                    <%= image_tag("logo.png", class: "menu_icon") %>
+
+                   </a>
+                   <p class="logoData">Youmken system app</p>
+               </div>
+               <div class="right col l6 m6 s12">
+
+                 <% if user_signed_in? %>
+                 <% else %>
+                 <%= link_to 'SignUp', new_user_registration_path , class: "waves-effect waves-light btn modal-trigger" %>
+
+
+
+ <%= link_to 'Login', new_user_session_path , class: "waves-effect waves-light btn modal-trigger" %>
+
+
+
+ <% end %>
+
+
+               </div>
+           </div>
+       </div>
+   </div>
+   <!-- Modal Structure -->
+
+   <div class="row">
+       <div class="container">
+           <div class="col s12">
+             <%= image_tag("char1.png", class: "character") %>
+
+               <h3 class="short-desc">The most useful tool for Turnover</h3>
+               <p class="details">Sweet beast cat mojo , yet spot something, big eyes, big eyes, crouch, shake butt, prepare to pounce sit.</p>
+ <% if user_signed_in? %>
+                <%= link_to 'Get started now', new_turnover_path , class: "waves-effect waves-light btn get-started" %>
+
+ <% end %>
+
+
+           </div>
+       </div>
+   </div>
+   <div class="row partners">
+       <div class="container">
+           <div class="col l12 s12 m12">
+               <a href="">
+                 <%= image_tag("partners/partn1.png") %>
+
+               </a>
+               <a href="">
+                 <%= image_tag("partners/partn2.png") %>
+               </a>
+               <a href="">
+                 <%= image_tag("partners/partn3.png") %>
+               </a>
+               <a href="">
+                 <%= image_tag("partners/partn4.png") %>
+               </a>
+           </div>
+       </div>
+   </div>

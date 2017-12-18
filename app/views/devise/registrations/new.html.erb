@@ -1,0 +1,66 @@
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+
+
+
+
+
+
+
+<div  class="Sign_up">
+        <div class="content">
+            <h4 style="    text-align: center;    color: #26a69a !important;">Sign up</h4>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="input-field ">
+                                <i class="material-icons prefix">person</i>
+                                <%= f.email_field :email, autofocus: true, id: :icon_person  %>
+
+                                <label for="icon_person">Email</label>
+                            </div>
+                        </div>
+                        <div class="col s12">
+                            <div class="input-field ">
+                                <i class="material-icons prefix">lock</i>
+                                <% if @minimum_password_length %>
+                                <em style= "padding:50px;">(<%= @minimum_password_length %> characters minimum)</em>
+                                <% end %><br />
+                                <%= f.password_field :password, autocomplete: "off", id: :icon_lock  %>
+                                <label for="icon_lock">Passwod</label>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="col s12">
+                            <div class="input-field ">
+                                <i class="material-icons prefix">lock</i>
+                                <%= f.password_field :password_confirmation, autocomplete: "off", id: :icon_lock %>
+
+                                <label for="icon_lock">Passwod Confirmation</label>
+                            </div>
+                        </div>
+
+                        <div class="col s12">
+                            <div class="input-field ">
+                              <%= f.submit "Sign Up" , class:"waves-effect waves-light btn "  %>      |            <%= render "devise/shared/links" %>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <% end %>

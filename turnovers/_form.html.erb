@@ -1,0 +1,272 @@
+<%= form_with(model: turnover, local: true) do |form| %>
+  <% if turnover.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(turnover.errors.count, "error") %> prohibited this turnover from being saved:</h2>
+
+      <ul>
+      <% turnover.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name_company %>
+    <%= form.text_field :name_company, id: :turnover_name_company %>
+  </div>
+
+  <div class="field">
+    <%= form.label :position %>
+    <%= form.text_field :position, id: :turnover_position %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sallary_left %>
+    <%= form.text_field :sallary_left, id: :turnover_sallary_left %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sallart_newer %>
+    <%= form.text_field :sallart_newer, id: :turnover_sallart_newer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :years_lefter %>
+    <%= form.text_field :years_lefter, id: :turnover_years_lefter %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sallary_manger %>
+    <%= form.text_field :sallary_manger, id: :turnover_sallary_manger %>
+  </div>
+
+  <div class="field">
+    <%= form.label :daily_hourly %>
+    <%= form.text_field :daily_hourly, id: :turnover_daily_hourly %>
+  </div>
+
+  <div class="field">
+    <%= form.label :agancey_cost %>
+    <%= form.text_field :agancey_cost, id: :turnover_agancey_cost %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ads_cost %>
+    <%= form.text_field :ads_cost, id: :turnover_ads_cost %>
+  </div>
+
+  <div class="field">
+    <%= form.label :spentHR_timeH %>
+    <%= form.text_field :spentHR_timeH, id: :turnover_spentHR_timeH %>
+  </div>
+
+  <div class="field">
+    <%= form.label :spentHR_timeD %>
+    <%= form.text_field :spentHR_timeD, id: :turnover_spentHR_timeD %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sallary_HR %>
+    <%= form.text_field :sallary_HR, id: :turnover_sallary_HR %>
+  </div>
+
+  <div class="field">
+    <%= form.label :onespentinterview_timeH %>
+    <%= form.text_field :onespentinterview_timeH, id: :turnover_onespentinterview_timeH %>
+  </div>
+
+  <div class="field">
+    <%= form.label :onespentinterview_timeD %>
+    <%= form.text_field :onespentinterview_timeD, id: :turnover_onespentinterview_timeD %>
+  </div>
+
+  <div class="field">
+    <%= form.label :oneSallary_interviewer %>
+    <%= form.text_field :oneSallary_interviewer, id: :turnover_oneSallary_interviewer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :twoSpentinterview_timeH %>
+    <%= form.text_field :twoSpentinterview_timeH, id: :turnover_twoSpentinterview_timeH %>
+  </div>
+
+  <div class="field">
+    <%= form.label :twoSpentinterviewD %>
+    <%= form.text_field :twoSpentinterviewD, id: :turnover_twoSpentinterviewD %>
+  </div>
+
+  <div class="field">
+    <%= form.label :twoSallary_interviewer %>
+    <%= form.text_field :twoSallary_interviewer, id: :turnover_twoSallary_interviewer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :threeSpentinterview_timeH %>
+    <%= form.text_field :threeSpentinterview_timeH, id: :turnover_threeSpentinterview_timeH %>
+  </div>
+
+  <div class="field">
+    <%= form.label :threeSpentinterview_timeD %>
+    <%= form.text_field :threeSpentinterview_timeD, id: :turnover_threeSpentinterview_timeD %>
+  </div>
+
+  <div class="field">
+    <%= form.label :threeSallary_interviewer %>
+    <%= form.text_field :threeSallary_interviewer, id: :turnover_threeSallary_interviewer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :oneSpentAdmin_timeH %>
+    <%= form.text_field :oneSpentAdmin_timeH, id: :turnover_oneSpentAdmin_timeH %>
+  </div>
+
+  <div class="field">
+    <%= form.label :oneSpentAdmin_timeD %>
+    <%= form.text_field :oneSpentAdmin_timeD, id: :turnover_oneSpentAdmin_timeD %>
+  </div>
+
+  <div class="field">
+    <%= form.label :oneSallary_admin %>
+    <%= form.text_field :oneSallary_admin, id: :turnover_oneSallary_admin %>
+  </div>
+
+  <div class="field">
+    <%= form.label :twoSpentAdmin_timeH %>
+    <%= form.text_field :twoSpentAdmin_timeH, id: :turnover_twoSpentAdmin_timeH %>
+  </div>
+
+  <div class="field">
+    <%= form.label :twoSpentAdmin_timeD %>
+    <%= form.text_field :twoSpentAdmin_timeD, id: :turnover_twoSpentAdmin_timeD %>
+  </div>
+
+  <div class="field">
+    <%= form.label :twoSallary_admin %>
+    <%= form.text_field :twoSallary_admin, id: :turnover_twoSallary_admin %>
+  </div>
+
+  <div class="field">
+    <%= form.label :threeSpentAdmin_timeH %>
+    <%= form.text_field :threeSpentAdmin_timeH, id: :turnover_threeSpentAdmin_timeH %>
+  </div>
+
+  <div class="field">
+    <%= form.label :threeSpentAdmin_timeD %>
+    <%= form.text_field :threeSpentAdmin_timeD, id: :turnover_threeSpentAdmin_timeD %>
+  </div>
+
+  <div class="field">
+    <%= form.label :threeSallary_admin %>
+    <%= form.text_field :threeSallary_admin, id: :turnover_threeSallary_admin %>
+  </div>
+
+  <div class="field">
+    <%= form.label :spentSupervisor_timeH %>
+    <%= form.text_field :spentSupervisor_timeH, id: :turnover_spentSupervisor_timeH %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sallarysupervisor %>
+    <%= form.text_field :sallarysupervisor, id: :turnover_sallarysupervisor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :spentSupervisor_timeD %>
+    <%= form.text_field :spentSupervisor_timeD, id: :turnover_spentSupervisor_timeD %>
+  </div>
+
+  <div class="field">
+    <%= form.label :spentEmployee_timeH %>
+    <%= form.text_field :spentEmployee_timeH, id: :turnover_spentEmployee_timeH %>
+  </div>
+
+  <div class="field">
+    <%= form.label :spentEmployee_timeD %>
+    <%= form.text_field :spentEmployee_timeD, id: :turnover_spentEmployee_timeD %>
+  </div>
+
+  <div class="field">
+    <%= form.label :spentadapt_timeH %>
+    <%= form.text_field :spentadapt_timeH, id: :turnover_spentadapt_timeH %>
+  </div>
+
+  <div class="field">
+    <%= form.label :spentadapt_timeD %>
+    <%= form.text_field :spentadapt_timeD, id: :turnover_spentadapt_timeD %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Sallary_adapt %>
+    <%= form.text_field :Sallary_adapt, id: :turnover_Sallary_adapt %>
+  </div>
+
+  <div class="field">
+    <%= form.label :spenttrain_timeH %>
+    <%= form.text_field :spenttrain_timeH, id: :turnover_spenttrain_timeH %>
+  </div>
+
+  <div class="field">
+    <%= form.label :spenttrain_timeD %>
+    <%= form.text_field :spenttrain_timeD, id: :turnover_spenttrain_timeD %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sallary_trainer %>
+    <%= form.text_field :sallary_trainer, id: :turnover_sallary_trainer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :spentprocess_timeH %>
+    <%= form.text_field :spentprocess_timeH, id: :turnover_spentprocess_timeH %>
+  </div>
+
+  <div class="field">
+    <%= form.label :spentprocess_timeD %>
+    <%= form.text_field :spentprocess_timeD, id: :turnover_spentprocess_timeD %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sallary_adminprocess %>
+    <%= form.text_field :sallary_adminprocess, id: :turnover_sallary_adminprocess %>
+  </div>
+
+  <div class="field">
+    <%= form.label :spentRotenlefter_timeH %>
+    <%= form.text_field :spentRotenlefter_timeH, id: :turnover_spentRotenlefter_timeH %>
+  </div>
+
+  <div class="field">
+    <%= form.label :spentRotenLefter_timeD %>
+    <%= form.text_field :spentRotenLefter_timeD, id: :turnover_spentRotenLefter_timeD %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sallary_adminRotenlefter %>
+    <%= form.text_field :sallary_adminRotenlefter, id: :turnover_sallary_adminRotenlefter %>
+  </div>
+
+  <div class="field">
+    <%= form.label :balanceLeavDay_timeH %>
+    <%= form.text_field :balanceLeavDay_timeH, id: :turnover_balanceLeavDay_timeH %>
+  </div>
+
+  <div class="field">
+    <%= form.label :balanceLeavDay_timeD %>
+    <%= form.text_field :balanceLeavDay_timeD, id: :turnover_balanceLeavDay_timeD %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Remaing_medical %>
+    <%= form.text_field :Remaing_medical, id: :turnover_Remaing_medical %>
+  </div>
+
+  <div class="field">
+    <%= form.label :indemnity %>
+    <%= form.text_field :indemnity, id: :turnover_indemnity %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

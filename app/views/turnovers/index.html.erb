@@ -1,0 +1,125 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Turnovers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name company</th>
+      <th>Position</th>
+      <th>Sallary left</th>
+      <th>Sallart newer</th>
+      <th>Years lefter</th>
+      <th>Sallary manger</th>
+      <th>Daily hourly</th>
+      <th>Agancey cost</th>
+      <th>Ads cost</th>
+      <th>Spenthr timeh</th>
+      <th>Spenthr timed</th>
+      <th>Sallary hr</th>
+      <th>Onespentinterview timeh</th>
+      <th>Onespentinterview timed</th>
+      <th>Onesallary interviewer</th>
+      <th>Twospentinterview timeh</th>
+      <th>Twospentinterviewd</th>
+      <th>Twosallary interviewer</th>
+      <th>Threespentinterview timeh</th>
+      <th>Threespentinterview timed</th>
+      <th>Threesallary interviewer</th>
+      <th>Onespentadmin timeh</th>
+      <th>Onespentadmin timed</th>
+      <th>Onesallary admin</th>
+      <th>Twospentadmin timeh</th>
+      <th>Twospentadmin timed</th>
+      <th>Twosallary admin</th>
+      <th>Threespentadmin timeh</th>
+      <th>Threespentadmin timed</th>
+      <th>Threesallary admin</th>
+      <th>Spentsupervisor timeh</th>
+      <th>Spentsupervisor timed</th>
+      <th>Spentemployee timeh</th>
+      <th>Spentemployee timed</th>
+      <th>Spentadapt timeh</th>
+      <th>Spentadapt timed</th>
+      <th>Sallary adapt</th>
+      <th>Spenttrain timeh</th>
+      <th>Spenttrain timed</th>
+      <th>Sallary trainer</th>
+      <th>Spentprocess timeh</th>
+      <th>Spentprocess timed</th>
+      <th>Sallary adminprocess</th>
+      <th>Spentrotenlefter timeh</th>
+      <th>Spentrotenlefter timed</th>
+      <th>Sallary adminrotenlefter</th>
+      <th>Balanceleavday timeh</th>
+      <th>Balanceleavday timed</th>
+      <th>Remaing medical</th>
+      <th>Indemnity</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @turnovers.each do |turnover| %>
+      <tr>
+        <td><%= turnover.name_company %></td>
+        <td><%= turnover.position %></td>
+        <td><%= turnover.sallary_left %></td>
+        <td><%= turnover.sallart_newer %></td>
+        <td><%= turnover.years_lefter %></td>
+        <td><%= turnover.sallary_manger %></td>
+        <td><%= turnover.daily_hourly %></td>
+        <td><%= turnover.agancey_cost %></td>
+        <td><%= turnover.ads_cost %></td>
+        <td><%= turnover.spentHR_timeH %></td>
+        <td><%= turnover.spentHR_timeD %></td>
+        <td><%= turnover.sallary_HR %></td>
+        <td><%= turnover.onespentinterview_timeH %></td>
+        <td><%= turnover.onespentinterview_timeD %></td>
+        <td><%= turnover.oneSallary_interviewer %></td>
+        <td><%= turnover.twoSpentinterview_timeH %></td>
+        <td><%= turnover.twoSpentinterviewD %></td>
+        <td><%= turnover.twoSallary_interviewer %></td>
+        <td><%= turnover.threeSpentinterview_timeH %></td>
+        <td><%= turnover.threeSpentinterview_timeD %></td>
+        <td><%= turnover.threeSallary_interviewer %></td>
+        <td><%= turnover.oneSpentAdmin_timeH %></td>
+        <td><%= turnover.oneSpentAdmin_timeD %></td>
+        <td><%= turnover.oneSallary_admin %></td>
+        <td><%= turnover.twoSpentAdmin_timeH %></td>
+        <td><%= turnover.twoSpentAdmin_timeD %></td>
+        <td><%= turnover.twoSallary_admin %></td>
+        <td><%= turnover.threeSpentAdmin_timeH %></td>
+        <td><%= turnover.threeSpentAdmin_timeD %></td>
+        <td><%= turnover.threeSallary_admin %></td>
+        <td><%= turnover.spentSupervisor_timeH %></td>
+        <td><%= turnover.spentSupervisor_timeD %></td>
+        <td><%= turnover.spentEmployee_timeH %></td>
+        <td><%= turnover.spentEmployee_timeD %></td>
+        <td><%= turnover.spentadapt_timeH %></td>
+        <td><%= turnover.spentadapt_timeD %></td>
+        <td><%= turnover.Sallary_adapt %></td>
+        <td><%= turnover.spenttrain_timeH %></td>
+        <td><%= turnover.spenttrain_timeD %></td>
+        <td><%= turnover.sallary_trainer %></td>
+        <td><%= turnover.spentprocess_timeH %></td>
+        <td><%= turnover.spentprocess_timeD %></td>
+        <td><%= turnover.sallary_adminprocess %></td>
+        <td><%= turnover.spentRotenlefter_timeH %></td>
+        <td><%= turnover.spentRotenLefter_timeD %></td>
+        <td><%= turnover.sallary_adminRotenlefter %></td>
+        <td><%= turnover.balanceLeavDay_timeH %></td>
+        <td><%= turnover.balanceLeavDay_timeD %></td>
+        <td><%= turnover.Remaing_medical %></td>
+        <td><%= turnover.indemnity %></td>
+        <td><%= link_to 'Show', turnover %></td>
+        <td><%= link_to 'Edit', edit_turnover_path(turnover) %></td>
+        <td><%= link_to 'Destroy', turnover, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Turnover', new_turnover_path %>

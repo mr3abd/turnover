@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @peal.name %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @peal.Date %>
+</p>
+
+<p>
+  <strong>Point:</strong>
+  <%= @peal.point %>
+</p>
+
+<p>
+  <strong>Money:</strong>
+  <%= @peal.money %>
+</p>
+
+<p>
+  <strong>Desc:</strong>
+  <%= @peal.desc %>
+</p>
+
+<%= link_to 'Edit', edit_peal_path(@peal) %> |
+<%= link_to 'Back', peals_path %>
