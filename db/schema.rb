@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171204225343) do
+ActiveRecord::Schema.define(version: 20180204224443) do
 
   create_table "admins", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -147,9 +147,11 @@ ActiveRecord::Schema.define(version: 20171204225343) do
     t.decimal "lcc"
     t.decimal "indirect_cost"
     t.decimal "turnover_ratio"
+    t.integer "user_id"
   end
 
   create_table "users", force: :cascade do |t|
+    t.boolean "admin"
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"

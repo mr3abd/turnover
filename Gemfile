@@ -37,7 +37,7 @@ gem 'autoprefixer-rails'
 gem 'material_icons'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'frontend-generators'
-
+gem 'rails_admin', '~> 1.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -57,11 +57,11 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
- 
+
  group :development do
    gem 'sqlite3'
  end
-group :production do 
+group :production do
   gem 'pg'
   gem 'rails_12factor'
 end

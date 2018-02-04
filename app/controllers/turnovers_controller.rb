@@ -1,4 +1,5 @@
 class TurnoversController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_turnover, only: [:show, :edit, :update, :destroy]
 
   # GET /turnovers
@@ -14,7 +15,7 @@ class TurnoversController < ApplicationController
 
   # GET /turnovers/new
   def new
-    @turnover = Turnover.new
+    @turnover = current_user.turnovers.build
   end
 
   # GET /turnovers/1/edit
@@ -24,7 +25,7 @@ class TurnoversController < ApplicationController
   # POST /turnovers
   # POST /turnovers.json
   def create
-    @turnover = Turnover.new(turnover_params)
+    @turnover = current_user.turnovers.build(turnover_params)
 
     respond_to do |format|
       if @turnover.save
