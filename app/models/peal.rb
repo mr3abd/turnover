@@ -1,2 +1,0 @@
-class Peal < ApplicationRecord
-end
