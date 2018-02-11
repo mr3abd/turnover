@@ -7,7 +7,5 @@ class Promocode < ApplicationRecord
 #
 
 
-has_many :promo_codes_users
-has_many :users, through: :promo_codes_users
-
+ has_and_belongs_to_many :users,
 end

@@ -5,12 +5,13 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
  INITIAL_ALLOWED_POSTS = 3
-         has_many :turnovers
-         has_many :posts
-         has_many :promo_codes_users
-           has_many :promo_codes, through: :promo_codes_users
-           def allowed_posts_count
-               INITIAL_ALLOWED_POSTS + promo_codes.sum(&:allowed_posts)
-           end
+     has_many :turnovers
+     has_many :posts
+     has_many :promocodes, through: :promo_codes_users
+
+
+    def allowed_posts_count
+         INITIAL_ALLOWED_POSTS + promocodes.sum(&:allowed_posts)
+     end
 
 end
