@@ -11,7 +11,7 @@ class User < ApplicationRecord
 
 
     def allowed_posts_count
-         INITIAL_ALLOWED_POSTS + promocodes.sum(&:allowed_posts)
+         INITIAL_ALLOWED_POSTS
      end
 
 end
