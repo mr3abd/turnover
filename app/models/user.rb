@@ -7,7 +7,6 @@ class User < ApplicationRecord
  INITIAL_ALLOWED_POSTS = 3
      has_many :turnovers
      has_many :posts
-     has_many :promocodes, through: :promo_codes_users
 
 
     def allowed_posts_count
