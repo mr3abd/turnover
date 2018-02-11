@@ -4,14 +4,14 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
- INITIAL_ALLOWED_POSTS = 3
+ #INITIAL_ALLOWED_POSTS = 3
      has_many :turnovers
      has_many :posts
-     has_and_belongs_to_many  :promocodes
+  #   has_and_belongs_to_many  :promocodes
 
 
-    def allowed_posts_count
-         INITIAL_ALLOWED_POSTS
-     end
+  #  def allowed_posts_count
+  #       INITIAL_ALLOWED_POSTS
+  #   end
 
 end
