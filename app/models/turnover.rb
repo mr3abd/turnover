@@ -26,6 +26,32 @@ class Turnover < ApplicationRecord
   validates :oneSallary_admin, presence: true
   validates :oneSpentAdmin_timeD, presence: true
   validates :oneSpentAdmin_timeH, presence: true
+  validates :twoSallary_admin, presence: true
+  validates :twoSpentAdmin_timeD, presence: true
+  validates :twoSpentAdmin_timeH, presence: true
+  validates :threeSallary_admin, presence: true
+  validates :threeSpentAdmin_timeD, presence: true
+  validates :threeSpentAdmin_timeH, presence: true
+  validates :spentSupervisor_timeD, presence: true
+  validates :spentSupervisor_timeH, presence: true
+  validates :spentEmployee_timeD, presence: true
+  validates :spentEmployee_timeH, presence: true
+  validates :Sallary_adapt, presence: true
+  validates :spentadapt_timeD, presence: true
+  validates :spentadapt_timeH, presence: true
+  validates :sallary_trainer, presence: true
+  validates :spenttrain_timeD, presence: true
+  validates :spenttrain_timeH, presence: true
+  validates :sallary_adminprocess, presence: true
+  validates :spentprocess_timeD, presence: true
+  validates :spentprocess_timeH, presence: true
+  validates :sallary_adminRotenlefter, presence: true
+  validates :spentRotenLefter_timeD, presence: true
+  validates :spentRotenlefter_timeH, presence: true
+  validates :indemnity, presence: true
+  validates :balanceLeavDay_timeD, presence: true
+  validates :balanceLeavDay_timeH, presence: true
+  validates :Remaing_medical, presence: true
 
 
 end
