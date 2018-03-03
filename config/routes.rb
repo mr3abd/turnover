@@ -1,15 +1,24 @@
 Rails.application.routes.draw do
 
   resources :promocodes
-  resources :posts
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  resources :posts
+ # post 'add_promo', to: 'users#promo'
+get 'users/promo', to: 'users#promo'
+post 'add_promo', to: 'users#add_promo'
+ # post 'promo', to: 'users#promo'
+# get 'users/index'
 
-  devise_for :users   do
-  get '/users/sign_out' => 'devise/sessions#destroy'
-end
-  scope "(:locale)", :locale => /en|ar/ do
+ # collection do :users
+   devise_for :users
+   resources :users, only: :index
 
-    resources :turnovers
+ # end
+
+
+scope "(:locale)", :locale => /en|ar/ do
+
+ resources :turnovers
  resources :home
 
 

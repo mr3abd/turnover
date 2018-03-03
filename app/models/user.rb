@@ -8,7 +8,7 @@ class User < ApplicationRecord
      has_many :turnovers
      has_many :posts
   #   has_and_belongs_to_many  :promocodes
-
+# default value  attribute :credit, default: 0
 
   #  def allowed_posts_count
   #       INITIAL_ALLOWED_POSTS
