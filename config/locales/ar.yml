@@ -40,7 +40,7 @@ ar:
   name_app: "يُمكن"
   login: "تسجيل الدخول"
   signup: "سجل"
-  logout: "تسجيل خروج"
+  logout: " خروج"
   email: "البريد الإلكتروني"
   password: "كلمه السر"
   password_confirmation: "تأكيد الباسود"
