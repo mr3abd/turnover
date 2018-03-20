@@ -12,12 +12,12 @@ end
   def add_promo
     @promocode = Promocode.find_by(code: params[:code])
   @user= current_user
-    unless @promocode.current_user.include
+    # unless @promocode.current_user.include
       unless  @promocode.users.count >= @promocode.limitations_use
   	@user.update_attributes(credit: @user.credit + @promocode.credit)
 
       end
-    end
+    # end
 
 # end
     #

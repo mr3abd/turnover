@@ -6,26 +6,36 @@
                     <%= image_tag("logo.png", class: "menu_icon") %>
 
                    </a>
-                   <p class="logoData">Youmken system app</p>
+                   <p class="logoData"><%= t('name_app') %></p>
                </div>
                <div class="right col l6 m6 s12">
 <ul>
                  <% if user_signed_in? %>
                  <li>
-                   <%= link_to 'Logout', destroy_user_session_path,class: "waves-effect waves-light btn modal-trigger" , method: :delete %>
+                   <%= link_to t('logout'), destroy_user_session_path,class: "waves-effect waves-light btn modal-trigger" , method: :delete %>
                 </li>
                  <% else %>
                  <li>
-                 <%= link_to 'SignUp', new_user_registration_path , class: "waves-effect waves-light btn modal-trigger" %>
+                 <%= link_to t('signup'), new_user_registration_path , class: "waves-effect waves-light btn modal-trigger" %>
                </li>
 
 <li>
- <%= link_to 'Login', new_user_session_path , class: "waves-effect waves-light btn modal-trigger" %>
+ <%= link_to t('login'), new_user_session_path , class: "waves-effect waves-light btn modal-trigger" %>
 </li>
 
 
- <% end %>
 
+ <% end %>
+ <% if I18n.locale == I18n.default_locale %>
+ <li>
+   <%= link_to "عربي", '/ar', class: "waves-effect waves-light btn modal-trigger" %>
+ </li>
+ <% else %>
+ <li>
+   <%= link_to "English", '/en', class: "waves-effect waves-light btn modal-trigger" %>
+
+ </li>
+ <%end%>
 </ul>
                </div>
            </div>
@@ -38,8 +48,8 @@
            <div class="col s12">
              <%= image_tag("char1.png", class: "character") %>
 
-               <h3 class="short-desc">The most useful tool for Turnover</h3>
-               <p class="details">Sweet beast cat mojo , yet spot something, big eyes, big eyes, crouch, shake butt, prepare to pounce sit.</p>
+               <h3 class="short-desc"><%= t('head_title_home') %></h3>
+               <p class="details"><%= t('bref_home') %></p>
  <% if user_signed_in? %>
                 <%= link_to 'Get started now', new_turnover_path , class: "waves-effect waves-light btn get-started" %>
 

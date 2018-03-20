@@ -13,62 +13,57 @@
 
 
 
-
-
-
-
-
     <div class="row">
         <div class="col l8 m10 s12">
             <!-- =======================================
                         Basic Data inputs 👆
             =========================================-->
-            <h3 class="main-title">Main Data</h3>
+            <h3 class="main-title"> <%= t('main_data') %></h3>
             <form action="">
                 <ul class="stepper linear">
                     <li class="step active">
-                        <div class="step-title waves-effect waves-dark">Basic Data</div>
+                        <div class="step-title waves-effect waves-dark"><%= t('baisc_data') %></div>
                         <div class="step-content basic-data">
                             <div class="row">
                                 <div class="input-field col s12">
                                   <%= form.text_field :name_company, id: :turnover_name_company %>
 
-                                    <label for="Organization-name">Organization name</label>
+                                    <label for="Organization-name"><%= t('organization_name') %></label>
                                 </div>
                                 <div class="input-field col s12">
                                   <%= form.text_field :position, id: "Subject"  %>
-                                    <label for="Subject">Subject position</label>
+                                    <label for="Subject"><%= t('subject_position') %></label>
                                 </div>
                                 <div class="input-field col s12">
                                   <%= form.text_field :sallary_left, id: :turnover_sallary_left %>
 
                                     <a class="tooltipped" data-position="right" data-delay="50" data-tooltip= "What about data .. !"><i class="material-icons">info_outline</i></a>
-                                    <label for="Departuring">Sallary Departuring Employee</label>
+                                    <label for="Departuring"><%= t('sallary_departuring') %></label>
                                 </div>
                                 <div class="input-field col s12">
                                   <%= form.text_field :sallart_newer, id: :turnover_sallary_left %>
 
                                     <a class="tooltipped" data-position="right" data-delay="50" data-tooltip= "What about data .. !"><i class="material-icons">info_outline</i></a>
-                                    <label for="Departuring">Sallary New Employee</label>
+                                    <label for="Departuring"><%= t('sallary_new_employee') %></label>
                                 </div>
                                 <div class="input-field col s12">
                                   <%= form.text_field :years_lefter, id: :turnover_years_lefter %>
-                                    <label for="number-of-year">number of year departing employee</label>
+                                    <label for="number-of-year"><%= t('number_years_departing_employee') %></label>
                                 </div>
                                 <div class="input-field col s12">
                                   <%= form.text_field :sallary_manger, id: :turnover_sallary_manger %>
                                     <a class="tooltipped" data-position="right" data-delay="50" data-tooltip= "What about data .. !"><i class="material-icons">info_outline</i></a>
-                                    <label for="salary_direct_supervisor">Salary of direct supervisor</label>
+                                    <label for="salary_direct_supervisor"><%= t('sallary_direct_supervisor') %></label>
                                 </div>
                                 <div class="input-field col s12">
                                   <%= form.text_field :daily_hourly, id: :turnover_daily_hourly %>
 
                                     <a class="tooltipped" data-position="right" data-delay="50" data-tooltip= "What about data .. !"><i class="material-icons">info_outline</i></a>
-                                    <label for="hours-of-working">Number of working hours</label>
+                                    <label for="hours-of-working"><%= t('number_working_hours') %></label>
                                 </div>
                             </div>
                             <div class="step-actions">
-                                <button class="waves-effect waves-dark btn next-step">Continue</button>
+                                <button class="waves-effect waves-dark btn next-step"><%= t('continue') %></button>
                             </div>
                         </div>
                     </li>
@@ -81,14 +76,14 @@
                                          Marketing coast ✌
                          =========================================-->
                          <li class="step">
-                             <div class="step-title waves-effect waves-dark">Marketing cost</div>
+                             <div class="step-title waves-effect waves-dark"><%= t('markeing_cost') %></div>
                              <div class="step-content">
                                  <div class="row">
                                      <ul class="collapsible" data-collapsible="accordion">
                                          <li>
                                              <div class="collapsible-header active ">
                                                  <i class="material-icons assignment">assignment</i>
-                                                 <h5>Recruimtment Agency Fee</h5>
+                                                 <h5><%= t('recruimtment_agency') %></h5>
                                              </div>
                                              <!-- Interviewing Coast here 👈 -->
                                              <div class="collapsible-body">
@@ -97,7 +92,7 @@
                                                          <div class="input-field col s12 m12 l12">
                                                            <%= form.text_field :agancey_cost, id: "turnover_agancey_cost"  %>
                                                              <!-- <label for="Salary">Salary</label> -->
-                                                             <span>EGY</span>
+                                                             <span><%= t('egy') %></span>
                                                          </div>
                                                      </div>
 
@@ -107,7 +102,7 @@
                                          <li>
                                              <div class="collapsible-header  ">
                                                  <i class="material-icons assignment">assignment</i>
-                                                 <h5>Recrumitment Advertising </h5>
+                                                 <h5><%= t('recruimtment_advertising') %> </h5>
                                              </div>
                                              <div class="collapsible-body">
                                                  <div class="row">
@@ -115,7 +110,7 @@
                                                          <div class="input-field col s12 m12 l12">
                                                            <%= form.text_field :ads_cost, id: "turnover_ads_cost"  %>
                                                              <!-- <label for="Salary">Salary</label> -->
-                                                             <span>EGY</span>
+                                                             <span><%= t('egy') %></span>
                                                          </div>
                                                      </div>
 
@@ -125,33 +120,33 @@
                                          <li>
                                              <div class="collapsible-header  ">
                                                  <i class="material-icons assignment">assignment</i>
-                                                 <h5>Social Media | For HR </h5>
+                                                 <h5><%= t('social_hr') %></h5>
                                              </div>
                                              <div class="collapsible-body">
                                                  <div class="row">
                                                      <div class="col s12 m4 l4">
-                                                         <p class='title'>Salary</p>
+                                                         <p class='title'><%= t('sallary') %></p>
                                                          <div class="input-field col s12 m12 l12">
                                                            <%= form.text_field :sallary_HR, id: "turnover_sallary_HR"  %>
 
                                                              <!-- <label for="Salary">Salary</label> -->
-                                                             <span>EGY</span>
+                                                             <span><%= t('egy') %></span>
                                                          </div>
                                                      </div>
                                                      <div class="col s12 m8 l8">
-                                                         <p class='title'>Time</p>
+                                                         <p class='title'><%= t('time') %></p>
                                                          <div class="input-field col s12 m6 l6">
                                                            <%= form.text_field :spentHR_timeD, id: "turnover_spentHR_timeD"  %>
 
                                                              <!-- <label for="time">Time</label> -->
-                                                             <span>Days</span>
+                                                             <span><%= t('days') %></span>
                                                          </div>
 
                                                          <div class="input-field col s12 m6 l6">
                                                            <%= form.text_field :spentHR_timeH, id: "turnover_spentHR_timeH"  %>
 
                                                              <!-- <label for="hours">Hours</label> -->
-                                                             <span>Hour</span>
+                                                             <span><%= t('hours') %></span>
                                                          </div>
                                                      </div>
                                                  </div>
@@ -161,8 +156,8 @@
 
                                  </div>
                                  <div class="step-actions">
-                                     <button class="waves-effect waves-dark btn next-step">CONTINUE</button>
-                                     <button class="waves-effect waves-dark btn-flat previous-step">BACK</button>
+                                     <button class="waves-effect waves-dark btn next-step"><%= t('continue') %></button>
+                                     <button class="waves-effect waves-dark btn-flat previous-step"><%= t('back') %></button>
                                  </div>
                              </div>
                          </li>
@@ -173,40 +168,40 @@
                                                              Interviewing Costs ✌
                                              =========================================-->
                                              <li class="step">
-                                                 <div class="step-title waves-effect waves-dark">Interviewing Costs</div>
+                                                 <div class="step-title waves-effect waves-dark"><%= t('interviewing_costs') %></div>
                                                  <div class="step-content">
                                                      <div class="row">
                                                          <ul class="collapsible" data-collapsible="accordion">
                                                              <li>
                                                                  <div class="collapsible-header active ">
                                                                      <i class="material-icons assignment">assignment</i>
-                                                                     <h5> Interview 1 </h5>
+                                                                     <h5> <%= t('interview_1') %> </h5>
                                                                  </div>
                                                                  <!-- Interviewing Coast here 👈 -->
                                                                  <div class="collapsible-body">
                                                                      <div class="row">
                                                                          <div class="col s12 m4 l4">
-                                                                             <p class='title'>Salary</p>
+                                                                             <p class='title'><%= t('sallary') %></p>
                                                                              <div class="input-field col s12 m12 l12">
                                                                                <%= form.text_field :oneSallary_interviewer, id: "turnover_oneSallary_admin" %>
 
                                                                                  <!-- <label for="Salary">Salary</label> -->
-                                                                                 <span>EGY</span>
+                                                                                 <span><%= t('egy') %></span>
                                                                              </div>
                                                                          </div>
                                                                          <div class="col s12 m8 l8">
-                                                                             <p class='title'>Time</p>
+                                                                             <p class='title'><%= t('time') %></p>
                                                                              <div class="input-field col s12 m6 l6">
                                                                                <%= form.text_field :onespentinterview_timeD, id: "turnover_onespentinterview_timeD" %>
 
                                                                                  <!-- <label for="time">Time</label> -->
-                                                                                 <span>Days</span>
+                                                                                 <span><%= t('days') %></span>
                                                                              </div>
 
                                                                              <div class="input-field col s12 m6 l6">
                                                                                <%= form.text_field :onespentinterview_timeH, id: "turnover_onespentinterview_timeH" %>
                                                                                  <!-- <label for="hours">Hours</label> -->
-                                                                                 <span>Hour</span>
+                                                                                 <span><%= t('hour') %></span>
                                                                              </div>
                                                                          </div>
                                                                      </div>
@@ -215,30 +210,30 @@
                                                              <li>
                                                                  <div class="collapsible-header  ">
                                                                      <i class="material-icons assignment">assignment</i>
-                                                                     <h5>Interview 2 </h5>
+                                                                     <h5><%= t('interview_2') %> </h5>
                                                                  </div>
                                                                  <div class="collapsible-body">
                                                                      <div class="row">
                                                                          <div class="col s12 m4 l4">
-                                                                             <p class='title'>Salary</p>
+                                                                             <p class='title'><%= t('sallary') %></p>
                                                                              <div class="input-field col s12 m12 l12">
                                                                                <%= form.text_field :twoSallary_interviewer, id: "turnover_twoSallary_interviewer" %>
                                                                                  <!-- <label for="Salary">Salary</label> -->
-                                                                                 <span>EGY</span>
+                                                                                 <span><%= t('egy') %></span>
                                                                              </div>
                                                                          </div>
                                                                          <div class="col s12 m8 l8">
-                                                                             <p class='title'>Time</p>
+                                                                             <p class='title'><%= t('Time') %></p>
                                                                              <div class="input-field col s12 m6 l6">
                                                                                <%= form.text_field :twoSpentinterviewD, id: "turnover_twoSpentinterviewD" %>
                                                                                  <!-- <label for="time">Time</label> -->
-                                                                                 <span>Days</span>
+                                                                                 <span><%= t('days') %></span>
                                                                              </div>
 
                                                                              <div class="input-field col s12 m6 l6">
                                                                                <%= form.text_field :twoSpentinterview_timeH, id: "turnover_twoSpentinterview_timeH"  %>
                                                                                  <!-- <label for="hours">Hours</label> -->
-                                                                                 <span>Hour</span>
+                                                                                 <span><%= t('hour') %></span>
                                                                              </div>
                                                                          </div>
                                                                      </div>
@@ -247,31 +242,31 @@
                                                              <li>
                                                                  <div class="collapsible-header  ">
                                                                      <i class="material-icons assignment">assignment</i>
-                                                                     <h5>Interview 3 </h5>
+                                                                     <h5><%= t('interview_3') %></h5>
                                                                  </div>
                                                                  <div class="collapsible-body">
                                                                      <div class="row">
                                                                          <div class="col s12 m4 l4">
-                                                                             <p class='title'>Salary</p>
+                                                                             <p class='title'><%= t('sallary') %></p>
                                                                              <div class="input-field col s12 m12 l12">
                                                                                <%= form.text_field :threeSallary_interviewer, id: "turnover_threeSallary_interviewer"  %>
                                                                                  <!-- <label for="Salary">Salary</label> -->
-                                                                                 <span>EGY</span>
+                                                                                 <span><%= t('egy') %></span>
                                                                              </div>
                                                                          </div>
                                                                          <div class="col s12 m8 l8">
-                                                                             <p class='title'>Time</p>
+                                                                             <p class='title'><%= t('time') %></p>
                                                                              <div class="input-field col s12 m6 l6">
                                                                                <%= form.text_field :threeSpentinterview_timeD, id: "turnover_threeSpentinterview_timeD"  %>
 
                                                                                  <!-- <label for="time">Time</label> -->
-                                                                                 <span>Days</span>
+                                                                                 <span><%= t('days') %></span>
                                                                              </div>
 
                                                                              <div class="input-field col s12 m6 l6">
                                                                                <%= form.text_field :threeSpentinterview_timeH, id: "turnover_threeSpentinterview_timeH"  %>
                                                                                  <!-- <label for="hours">Hours</label> -->
-                                                                                 <span>Hour</span>
+                                                                                 <span><%= t('hour') %></span>
                                                                              </div>
                                                                          </div>
                                                                      </div>
@@ -281,8 +276,8 @@
 
                                                      </div>
                                                      <div class="step-actions">
-                                                         <button class="waves-effect waves-dark btn next-step">CONTINUE</button>
-                                                         <button class="waves-effect waves-dark btn-flat previous-step">BACK</button>
+                                                         <button class="waves-effect waves-dark btn next-step"><%= t('continue') %></button>
+                                                         <button class="waves-effect waves-dark btn-flat previous-step"><%= t('back') %></button>
                                                      </div>
                                                  </div>
                                              </li>
@@ -298,40 +293,40 @@
                                     Administration Cost ✌
                     =========================================-->
                     <li class="step">
-                        <div class="step-title waves-effect waves-dark"> Administration Cost </div>
+                        <div class="step-title waves-effect waves-dark"> <%= t('administration_cost') %> </div>
                         <div class="step-content">
                             <div class="row">
                                 <ul class="collapsible" data-collapsible="accordion">
                                     <li>
                                         <div class="collapsible-header active ">
                                             <i class="material-icons assignment">assignment</i>
-                                            <h5>  Admin 1 </h5>
+                                            <h5> <%= t('admin_1') %>  </h5>
                                         </div>
                                         <!-- Interviewing Coast here 👈 -->
                                         <div class="collapsible-body">
                                             <div class="row">
                                                 <div class="col s12 m4 l4">
-                                                    <p class='title'>Salary</p>
+                                                    <p class='title'><%= t('sallary') %></p>
                                                     <div class="input-field col s12 m12 l12">
                                                       <%= form.text_field :oneSallary_admin, id: "turnover_oneSallary_admin" %>
 
                                                         <!-- <label for="Salary">Salary</label> -->
-                                                        <span>EGY</span>
+                                                        <span><%= t('egy') %></span>
                                                     </div>
                                                 </div>
                                                 <div class="col s12 m8 l8">
-                                                    <p class='title'>Time</p>
+                                                    <p class='title'><%= t('time') %></p>
                                                     <div class="input-field col s12 m6 l6">
                                                       <%= form.text_field :oneSpentAdmin_timeD, id: "turnover_oneSpentAdmin_timeD"  %>
 
                                                         <!-- <label for="time">Time</label> -->
-                                                        <span>Days</span>
+                                                        <span><%= t('days') %></span>
                                                     </div>
 
                                                     <div class="input-field col s12 m6 l6">
                                                       <%= form.text_field :oneSpentAdmin_timeH, id: "turnover_oneSpentAdmin_timeH"  %>
                                                         <!-- <label for="hours">Hours</label> -->
-                                                        <span>Hour</span>
+                                                        <span><%= t('hour') %></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -340,30 +335,30 @@
                                     <li>
                                         <div class="collapsible-header  ">
                                             <i class="material-icons assignment">assignment</i>
-                                            <h5>Admin 2 </h5>
+                                            <h5><%= t('admin_2') %> </h5>
                                         </div>
                                         <div class="collapsible-body">
                                             <div class="row">
                                                 <div class="col s12 m4 l4">
-                                                    <p class='title'>Salary</p>
+                                                    <p class='title'><%= t('sallary') %></p>
                                                     <div class="input-field col s12 m12 l12">
                                                       <%= form.text_field :twoSallary_admin, id: "turnover_twoSallary_admin"  %>
                                                         <!-- <label for="Salary">Salary</label> -->
-                                                        <span>EGY</span>
+                                                        <span><%= t('sallary') %></span>
                                                     </div>
                                                 </div>
                                                 <div class="col s12 m8 l8">
-                                                    <p class='title'>Time</p>
+                                                    <p class='title'><%= t('time') %></p>
                                                     <div class="input-field col s12 m6 l6">
                                                       <%= form.text_field :twoSpentAdmin_timeD, id: "turnover_twoSpentAdmin_timeD"   %>
                                                         <!-- <label for="time">Time</label> -->
-                                                        <span>Days</span>
+                                                        <span><%= t('days') %></span>
                                                     </div>
 
                                                     <div class="input-field col s12 m6 l6">
                                                       <%= form.text_field :twoSpentAdmin_timeH, id: "turnover_twoSpentAdmin_timeH"  %>
                                                         <!-- <label for="hours">Hours</label> -->
-                                                        <span>Hour</span>
+                                                        <span><%= t('hour') %></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -372,31 +367,31 @@
                                     <li>
                                         <div class="collapsible-header  ">
                                             <i class="material-icons assignment">assignment</i>
-                                            <h5>Admin 3 </h5>
+                                            <h5><%= t('admin_3') %> </h5>
                                         </div>
                                         <div class="collapsible-body">
                                             <div class="row">
                                                 <div class="col s12 m4 l4">
-                                                    <p class='title'>Salary</p>
+                                                    <p class='title'><%= t('sallary') %></p>
                                                     <div class="input-field col s12 m12 l12">
                                                       <%= form.text_field :threeSallary_admin, id: "turnover_threeSallary_admin"  %>
                                                         <!-- <label for="Salary">Salary</label> -->
-                                                        <span>EGY</span>
+                                                        <span><%= t('egy') %></span>
                                                     </div>
                                                 </div>
                                                 <div class="col s12 m8 l8">
-                                                    <p class='title'>Time</p>
+                                                    <p class='title'><%= t('time') %></p>
                                                     <div class="input-field col s12 m6 l6">
                                                       <%= form.text_field :threeSpentAdmin_timeD, id: "turnover_threeSpentAdmin_timeD"%>
 
                                                         <!-- <label for="time">Time</label> -->
-                                                        <span>Days</span>
+                                                        <span><%= t('days') %></span>
                                                     </div>
 
                                                     <div class="input-field col s12 m6 l6">
                                                       <%= form.text_field :threeSpentAdmin_timeH, id: "turnover_threeSpentAdmin_timeH"%>
                                                         <!-- <label for="hours">Hours</label> -->
-                                                        <span>Hour</span>
+                                                        <span><%= t('hour') %></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -406,22 +401,16 @@
 
                             </div>
                             <div class="step-actions">
-                                <button class="waves-effect waves-dark btn next-step">CONTINUE</button>
-                                <button class="waves-effect waves-dark btn-flat previous-step">BACK</button>
+                                <button class="waves-effect waves-dark btn next-step"><%= t('continue') %></button>
+                                <button class="waves-effect waves-dark btn-flat previous-step"><%= t('back') %></button>
                             </div>
                         </div>
                     </li>
-
-
-
-
-
-
                                                             <!-- =======================================
                                                                             Supervision Costs During Hiring
                                                             =========================================-->
                                                             <li class="step">
-                                                                <div class="step-title waves-effect waves-dark">Supervision Costs During Hiring </div>
+                                                                <div class="step-title waves-effect waves-dark"><%= t('supervision_costs_during_hiring') %></div>
                                                                 <div class="step-content">
                                                                     <div class="row">
                                                                         <ul class="collapsible" data-collapsible="accordion">
@@ -431,18 +420,18 @@
                                                                                     <div class="row">
 
                                                                                         <div class="col s12 m8 l8">
-                                                                                            <p class='title'>Time</p>
+                                                                                            <p class='title'><%= t('time') %></p>
                                                                                             <div class="input-field col s12 m6 l6">
                                                                                               <%= form.text_field :spentSupervisor_timeD, id: "spentSupervisor_timeD"  %>
 
                                                                                                 <!-- <label for="time">Time</label> -->
-                                                                                                <span>Days</span>
+                                                                                                <span><%= t('days') %></span>
                                                                                             </div>
 
                                                                                             <div class="input-field col s12 m6 l6">
                                                                                               <%= form.text_field :spentSupervisor_timeH, id: "spentSupervisor_timeH"  %>
                                                                                                 <!-- <label for="hours">Hours</label> -->
-                                                                                                <span>Hour</span>
+                                                                                                <span><%= t('hour') %></span>
                                                                                             </div>
                                                                                         </div>
                                                                                     </div>
@@ -452,56 +441,42 @@
 
                                                                     </div>
                                                                     <div class="step-actions">
-                                                                        <button class="waves-effect waves-dark btn next-step">CONTINUE</button>
-                                                                        <button class="waves-effect waves-dark btn-flat previous-step">BACK</button>
+                                                                        <button class="waves-effect waves-dark btn next-step"><%= t('continue') %></button>
+                                                                        <button class="waves-effect waves-dark btn-flat previous-step"><%= t('back') %></button>
                                                                     </div>
                                                                 </div>
                                                             </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                     <!-- =======================================
                                     Orientaion & Training Costs ✌
                     =========================================-->
                     <li class="step">
-                        <div class="step-title waves-effect waves-dark">Orientaion & Training Costs</div>
+                        <div class="step-title waves-effect waves-dark"><%= t('orientaion_traning_costs') %></div>
                         <div class="step-content">
                             <div class="row">
                                 <ul class="collapsible" data-collapsible="accordion">
                                     <li>
                                         <div class="collapsible-header active ">
                                             <i class="material-icons assignment">assignment</i>
-                                            <h5>  Employee </h5>
+                                            <h5><%= t('employee') %> </h5>
                                         </div>
                                         <!-- Interviewing Coast here 👈 -->
                                         <div class="collapsible-body">
                                             <div class="row">
 
                                                 <div class="col s12 m8 l8">
-                                                    <p class='title'>Time</p>
+                                                    <p class='title'><%= t('time') %></p>
                                                     <div class="input-field col s12 m6 l6">
                                                       <%= form.text_field :spentEmployee_timeD, id: "spentEmployee_timeD"   %>
 
                                                         <!-- <label for="time">Time</label> -->
-                                                        <span>Days</span>
+                                                        <span><%= t('days') %></span>
                                                     </div>
 
                                                     <div class="input-field col s12 m6 l6">
                                                       <%= form.text_field :spentEmployee_timeH, id: "turnover_spentEmployee_timeH" %>
                                                         <!-- <label for="hours">Hours</label> -->
-                                                        <span>Hour</span>
+                                                        <span><%= t('hour') %></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -510,30 +485,30 @@
                                     <li>
                                         <div class="collapsible-header  ">
                                             <i class="material-icons assignment">assignment</i>
-                                            <h5>Orientaion Officer </h5>
+                                            <h5><%= t('orientaion_officer') %> </h5>
                                         </div>
                                         <div class="collapsible-body">
                                             <div class="row">
                                                 <div class="col s12 m4 l4">
-                                                    <p class='title'>Salary</p>
+                                                    <p class='title'><%= t('sallary') %></p>
                                                     <div class="input-field col s12 m12 l12">
                                                       <%= form.text_field :Sallary_adapt, id: "turnover_Sallary_adapt"  %>
                                                         <!-- <label for="Salary">Salary</label> -->
-                                                        <span>EGY</span>
+                                                        <span><%= t('egy') %></span>
                                                     </div>
                                                 </div>
                                                 <div class="col s12 m8 l8">
-                                                    <p class='title'>Time</p>
+                                                    <p class='title'><%= t('time') %></p>
                                                     <div class="input-field col s12 m6 l6">
                                                       <%= form.text_field :spentadapt_timeD, id: "turnover_spentadapt_timeD"   %>
                                                         <!-- <label for="time">Time</label> -->
-                                                        <span>Days</span>
+                                                        <span><%= t('days') %></span>
                                                     </div>
 
                                                     <div class="input-field col s12 m6 l6">
                                                       <%= form.text_field :spentadapt_timeH, id: "turnover_spentadapt_timeH"   %>
                                                         <!-- <label for="hours">Hours</label> -->
-                                                        <span>Hour</span>
+                                                        <span><%= t('hour') %></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -542,31 +517,31 @@
                                     <li>
                                         <div class="collapsible-header  ">
                                             <i class="material-icons assignment">assignment</i>
-                                            <h5>Training </h5>
+                                            <h5><%= t('training') %> </h5>
                                         </div>
                                         <div class="collapsible-body">
                                             <div class="row">
                                                 <div class="col s12 m4 l4">
-                                                    <p class='title'>Salary</p>
+                                                    <p class='title'><%= t('sallary') %></p>
                                                     <div class="input-field col s12 m12 l12">
                                                       <%= form.text_field :sallary_trainer, id: "turnover_sallary_trainer"   %>
                                                         <!-- <label for="Salary">Salary</label> -->
-                                                        <span>EGY</span>
+                                                        <span><%= t('egy') %></span>
                                                     </div>
                                                 </div>
                                                 <div class="col s12 m8 l8">
-                                                    <p class='title'>Time</p>
+                                                    <p class='title'><%= t('time') %></p>
                                                     <div class="input-field col s12 m6 l6">
                                                       <%= form.text_field :spenttrain_timeD, id: "turnover_spenttrain_timeD" %>
 
                                                         <!-- <label for="time">Time</label> -->
-                                                        <span>Days</span>
+                                                        <span><%= t('days') %></span>
                                                     </div>
 
                                                     <div class="input-field col s12 m6 l6">
                                                       <%= form.text_field :spenttrain_timeH, id: "turnover_spenttrain_timeH" %>
                                                         <!-- <label for="hours">Hours</label> -->
-                                                        <span>Hour</span>
+                                                        <span><%= t('hour') %></span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -576,60 +551,49 @@
 
                             </div>
                             <div class="step-actions">
-                                <button class="waves-effect waves-dark btn next-step">CONTINUE</button>
-                                <button class="waves-effect waves-dark btn-flat previous-step">BACK</button>
+                                <button class="waves-effect waves-dark btn next-step"><%= t('continue') %></button>
+                                <button class="waves-effect waves-dark btn-flat previous-step"><%= t('back') %></button>
                             </div>
                         </div>
                     </li>
 
-
-
-
-
-
-
-
-
-
-
-
                   <!-- Termination Costs
     =========================================-->
     <li class="step">
-        <div class="step-title waves-effect waves-dark"> Termination Cost  </div>
+        <div class="step-title waves-effect waves-dark"><%= t('termination_cost') %>  </div>
         <div class="step-content">
             <div class="row">
                 <ul class="collapsible" data-collapsible="accordion">
                     <li>
                         <div class="collapsible-header active ">
                             <i class="material-icons assignment">assignment</i>
-                            <h5> processing the termination </h5>
+                            <h5> <%= t('processing_termination') %></h5>
                         </div>
                         <!-- Interviewing Coast here 👈  -->
                         <div class="collapsible-body">
                             <div class="row">
                                 <div class="col s12 m4 l4">
-                                    <p class='title'>Admin Salary</p>
+                                    <p class='title'><%= t('admin_sallary') %></p>
                                     <div class="input-field col s12 m12 l12">
                                       <%= form.text_field :sallary_adminprocess, id: "turnover_sallary_adminprocess"     %>
 
                                         <!-- <label for="Salary">Salary</label> -->
-                                        <span>EGY</span>
+                                        <span><%= t('egy') %></span>
                                     </div>
                                 </div>
                                 <div class="col s12 m8 l8">
-                                    <p class='title'>Time</p>
+                                    <p class='title'><%= t('time') %></p>
                                     <div class="input-field col s12 m6 l6">
                                       <%= form.text_field :spentprocess_timeD, id: "turnover_spentprocess_timeD"  %>
 
                                         <!-- <label for="time">Time</label> -->
-                                        <span>Days</span>
+                                        <span><%= t('days') %></span>
                                     </div>
 
                                     <div class="input-field col s12 m6 l6">
                                       <%= form.text_field :spentprocess_timeH, id: "turnover_spentprocess_timeH"  %>
                                         <!-- <label for="hours">Hours</label> -->
-                                        <span>Hour</span>
+                                        <span><%= t('hour') %></span>
                                     </div>
                                 </div>
                             </div>
@@ -638,30 +602,30 @@
                     <li>
                         <div class="collapsible-header  ">
                             <i class="material-icons assignment">assignment</i>
-                            <h5>Exit interview </h5>
+                            <h5><%= t('exit_interview') %> </h5>
                         </div>
                         <div class="collapsible-body">
                             <div class="row">
                                 <div class="col s12 m4 l4">
-                                    <p class='title'>Salary</p>
+                                    <p class='title'><%= t('sallary') %></p>
                                     <div class="input-field col s12 m12 l12">
                                       <%= form.text_field :sallary_adminRotenlefter, id: "turnover_sallary_adminRotenlefter" %>
                                         <!-- <label for="Salary">Salary</label> -->
-                                        <span>EGY</span>
+                                        <span><%= t('egy') %></span>
                                     </div>
                                 </div>
                                 <div class="col s12 m8 l8">
-                                    <p class='title'>Time</p>
+                                    <p class='title'><%= t('time') %></p>
                                     <div class="input-field col s12 m6 l6">
                                       <%= form.text_field :spentRotenLefter_timeD, id: "turnover_spentRotenLefter_timeD" %>
                                         <!-- <label for="time">Time</label> -->
-                                        <span>Days</span>
+                                        <span><%= t('days') %></span>
                                     </div>
 
                                     <div class="input-field col s12 m6 l6">
                                       <%= form.text_field :spentRotenlefter_timeH, id: "turnover_spentRotenLefter_timeH" %>
                                         <!-- <label for="hours">Hours</label> -->
-                                        <span>Hour</span>
+                                        <span><%= t('hour') %></span>
                                     </div>
                                 </div>
                             </div>
@@ -672,30 +636,30 @@
                       <li>
                           <div class="collapsible-header  ">
                               <i class="material-icons assignment">assignment</i>
-                              <h5>Balance of leave Days & End of service benefit </h5>
+                              <h5><%= t('balance_leave_benefit') %> </h5>
                           </div>
                           <div class="collapsible-body">
                               <div class="row">
                                   <div class="col s12 m4 l4">
-                                      <p class='title'> benefit</p>
+                                      <p class='title'> <%= t('benefit') %></p>
                                       <div class="input-field col s12 m12 l12">
                                         <%= form.text_field :indemnity, id: "turnover_indemnity"  %>
                                           <!-- <label for="Salary">Salary</label> -->
-                                          <span>EGY</span>
+                                          <span><%= t('egy') %></span>
                                       </div>
                                   </div>
                                   <div class="col s12 m8 l8">
-                                      <p class='title'>Balance of leave Days</p>
+                                      <p class='title'><%= t('balance_leave') %></p>
                                       <div class="input-field col s12 m6 l6">
                                         <%= form.text_field :balanceLeavDay_timeD, id: "turnover_balanceLeavDay_timeD"  %>
                                           <!-- <label for="time">Time</label> -->
-                                          <span>Days</span>
+                                          <span><%= t('days') %></span>
                                       </div>
 
                                       <div class="input-field col s12 m6 l6">
                                         <%= form.text_field :balanceLeavDay_timeH, id: "turnover_balanceLeavDay_timeH"   %>
                                           <!-- <label for="hours">Hours</label> -->
-                                          <span>Hour</span>
+                                          <span><%= t('hour') %></span>
                                       </div>
                                   </div>
                               </div>
@@ -704,7 +668,7 @@
                       <li>
                         <div class="collapsible-header  ">
                             <i class="material-icons assignment">assignment</i>
-                            <h5>Remaing amount of medical</h5>
+                            <h5><%= t('remaing_medical') %></h5>
                         </div>
                         <div class="collapsible-body">
                             <div class="row">
@@ -712,7 +676,7 @@
                                     <div class="input-field col s12 m12 l12">
                                       <%= form.text_field :Remaing_medical, id: "turnover_Remaing_medical"  %>
                                         <!-- <label for="Salary">Salary</label> -->
-                                        <span>EGY</span>
+                                        <span><%= t('egy') %></span>
                                     </div>
                                 </div>
 
@@ -723,51 +687,29 @@
 
             </div>
             <div class="step-actions">
-                <button class="waves-effect waves-dark btn next-step">CONTINUE</button>
-                <button class="waves-effect waves-dark btn-flat previous-step">BACK</button>
+                <button class="waves-effect waves-dark btn next-step"><%= t('continue') %></button>
+                <button class="waves-effect waves-dark btn-flat previous-step"><%= t('back') %></button>
             </div>
         </div>
     </li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                     <!-- =======================================
                                 Indirect coast 👌
                     =========================================-->
                     <li class="step">
-                        <div class="step-title waves-effect waves-dark">Callback</div>
+                        <div class="step-title waves-effect waves-dark"><%= t('callback') %></div>
                         <div class="step-content">
-                            waiting
+                            <%= t('waiting') %>
                             <div class="step-actions">
                             </div>
 
 
-                                <%= form.submit "Submit" , class: "  waves-effect waves-dark btn "  %>
+                                <%= form.submit t('submit') , class: "  waves-effect waves-dark btn "  %>
 
-                              
+
                         </div>
                     </li>
                 </ul>
             </form>
         </div>
     </div>
-
-
-
-
-
-
-
-
 <% end %>

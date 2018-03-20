@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180215222401) do
+ActiveRecord::Schema.define(version: 20180320195630) do
 
   create_table "posts", force: :cascade do |t|
     t.string "title"
@@ -26,6 +26,13 @@ ActiveRecord::Schema.define(version: 20180215222401) do
     t.integer "limitations_use"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "promocodes_users", id: false, force: :cascade do |t|
+    t.integer "promocode_id", null: false
+    t.integer "user_id", null: false
+    t.index ["promocode_id", "user_id"], name: "index_promocodes_users_on_promocode_id_and_user_id"
+    t.index ["user_id", "promocode_id"], name: "index_promocodes_users_on_user_id_and_promocode_id"
   end
 
   create_table "turnovers", force: :cascade do |t|
@@ -122,6 +129,8 @@ ActiveRecord::Schema.define(version: 20180215222401) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "credit"
+    t.string "name"
+    t.string "name_company"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
