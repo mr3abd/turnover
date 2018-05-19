@@ -46,7 +46,7 @@ ar:
   password_confirmation: "تأكيد الباسود"
   ur_name: "اسمك"
   company_name: "اسم الشركه"
-  name_manger: "اسم المسؤل بالشركة"
+  manger_name: "اسم المسؤل بالشركة"
   workers_number: "عدد العاملين"
   jobpostion: "المسمى الوظيفي"
   phone: "رقم هاتفك"
