@@ -46,6 +46,12 @@ ar:
   password_confirmation: "تأكيد الباسود"
   ur_name: "اسمك"
   company_name: "اسم الشركه"
+  name_manger_acc: "اسم المسؤل بالشركة"
+  workers_number: "عدد العاملين"
+  jobpostion: "المسمى الوظيفي"
+  phone: "رقم هاتفك"
+  activity: "نشاطات الشركة"
+  city: "محافظة"
   # Shared User
   forget_pass: "نسيت رقمك السري؟"
   didnt_receive_confir: "لم تتلقى تعليمات التأكيد؟"

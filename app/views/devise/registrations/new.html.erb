@@ -39,6 +39,68 @@
                                 <label for="icon_person"><%= t('company_name') %></label>
                             </div>
                         </div>
+
+                        <div class="col s12">
+                            <div class="input-field ">
+                                <i class="material-icons prefix">person</i>
+                                <%= f.text_field :name_manger_acc, id: :icon_person  %>
+
+                                <label for="icon_person"><%= t('name_manger_acc') %></label>
+                            </div>
+                        </div>
+
+                        <div class="col s12">
+                            <div class="input-field ">
+                                <i class="material-icons prefix">person</i>
+                                <%= f.text_field :workers, id: :icon_person  %>
+
+                                <label for="icon_person"><%= t('workers_number') %></label>
+                            </div>
+                        </div>
+
+                        <div class="col s12">
+                            <div class="input-field ">
+                                <i class="material-icons prefix">person</i>
+                                <%= f.text_field :jobpostion, id: :icon_person  %>
+
+                                <label for="icon_person"><%= t('jobpostion') %></label>
+                            </div>
+                        </div>
+                        <div class="col s12">
+                            <div class="input-field ">
+                                <i class="material-icons prefix">person</i>
+                                <%= f.text_field :phone, id: :icon_person  %>
+
+                                <label for="icon_person"><%= t('phone') %></label>
+                            </div>
+                        </div>
+                        <div class="col s12">
+                          <label>
+                          <%= f.collection_select :gender_id, Gender.all, :id, :name,  :prompt => "Choose your Gender" %>
+                        </label>
+                            <div class="input-field ">
+                                <i class="material-icons prefix">person</i>
+
+
+
+                            </div>
+                        </div>
+                        <div class="col s12">
+                            <div class="input-field ">
+                                <i class="material-icons prefix">person</i>
+                                <%= f.text_field :activity, id: :icon_person  %>
+
+                                <label for="icon_person"><%= t('activity') %></label>
+                            </div>
+                        </div>
+                        <div class="col s12">
+                            <div class="input-field ">
+                                <i class="material-icons prefix">person</i>
+                                <%= f.text_field :city, id: :icon_person  %>
+
+                                <label for="icon_person"><%= t('city') %></label>
+                            </div>
+                        </div>
                         <div class="col s12">
                             <div class="input-field ">
                                 <i class="material-icons prefix">lock</i>
