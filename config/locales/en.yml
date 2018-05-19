@@ -46,7 +46,7 @@ en:
   password_confirmation: "Passwod Confirmation"
   ur_name: "Your Name"
   company_name: "Company name"
-  name_manger_acc: "Name of the manager"
+  name_manger: "Name of the manager"
   workers_number: "Number of Workers"
   jobpostion: "Job Title"
   phone: "Your Phone Number"
