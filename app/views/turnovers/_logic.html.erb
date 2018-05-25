@@ -100,4 +100,4 @@
   <% # TurnOver %>
   <% turnover_decimal = @turnover.agancey_cost + @turnover.ads_cost + @turnover.CostEads + @turnover.costhire + @turnover.costadmin + @turnover.costmagment + @turnover.costadapt + @turnover.loscontract + @turnover.indirect_cost %>
 
-<% @turnover.turnover_ratio = (100 * (turnover_decimal / @turnover.sallary_left)).to_i %>
+<% @turnover.turnover_ratio = (turnover_decimal / @turnover.sallary_left).to_i %>
