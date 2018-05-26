@@ -47,14 +47,14 @@
 
 <% @turnover.lca = @turnover.spentprocess_timeD + @turnover.spentprocess_timeH / @turnover.daily_hourly %>
 <% @turnover.lcb = @turnover.spentRotenLefter_timeD + @turnover.spentRotenlefter_timeH / @turnover.daily_hourly %>
-<% @turnover.lcc = @turnover.balanceLeavDay_timeD + @turnover.balanceLeavDay_timeH / @turnover.daily_hourly %>
+<%# @turnover.lcc = @turnover.balanceLeavDay_timeD + @turnover.balanceLeavDay_timeH / @turnover.daily_hourly %>
 
 
 <% one_d =  @turnover.lca * (@turnover.sallary_adminprocess/30) %>
 <% two_d = @turnover.lcb * (@turnover.sallary_adminRotenlefter/30) %>
-<% three_d =  @turnover.lcc * (@turnover.Remaing_medical/30) %>
+<% three_d = @turnover.balanceLeavDay_timeD + @turnover.balanceLeavDay_timeH / @turnover.daily_hourly %>
 
-<% @turnover.loscontract = one_d + two_d  + three_d %>
+<% @turnover.loscontract = one_d + two_d  + three_d + @turnover.Remaing_medical + @turnover.indemnity %>
 
 
 
