@@ -16,9 +16,9 @@
 
 <% #All Cost Admin !!!  %>
 
-<% @turnover.Ecc = @turnover.oneSpentAdmin_timeD + @turnover.oneSpentAdmin_timeH / @turnover.daily_hourly %>
+<% @turnover.Eca = @turnover.oneSpentAdmin_timeD + @turnover.oneSpentAdmin_timeH / @turnover.daily_hourly %>
 <% @turnover.Ecb = @turnover.twoSpentAdmin_timeD + @turnover.twoSpentAdmin_timeH / @turnover.daily_hourly %>
-<% @turnover.Eca = @turnover.threeSpentAdmin_timeD + @turnover.threeSpentAdmin_timeH / @turnover.daily_hourly %>
+<% @turnover.Ecc = @turnover.threeSpentAdmin_timeD + @turnover.threeSpentAdmin_timeH / @turnover.daily_hourly %>
 
 <% one_b =  @turnover.Eca * (@turnover.oneSallary_admin/30) %>
 <% two_b = @turnover.Ecb * (@turnover.twoSallary_admin/30) %>
@@ -27,7 +27,7 @@
 
 <% # All Cost Magment %>
 <% @turnover.ma = @turnover.spentSupervisor_timeD + @turnover.spentSupervisor_timeH / @turnover.daily_hourly %>
-<% @turnover.costmagment = @turnover.ma * ((@turnover.sallarysupervisor.nil? ? 0 : @turnover.sallarysupervisor) / 30) %>
+<% @turnover.costmagment = @turnover.ma * (@turnover.sallarysupervisor / 30) %>
 
 
 <% #All Cost Adapt!  %>
