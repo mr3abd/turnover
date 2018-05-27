@@ -9,7 +9,7 @@
 <% @turnover.Ebab = @turnover.twoSpentinterviewD + @turnover.twoSpentinterview_timeH / @turnover.daily_hourly %>
 <% @turnover.Eba = @turnover.onespentinterview_timeD + @turnover.onespentinterview_timeH / @turnover.daily_hourly %>
 
-<% one = @turnover.Eba * (@turnover.oneSallary_interviewer / 30 ) %>
+<% one = @turnover.Eba * (@turnover.sallarysupervisor / 30 ) %>
 <% two = @turnover.Ebab * (@turnover.twoSallary_interviewer / 30) %>
 <% three = @turnover.Ebac * (@turnover.threeSallary_interviewer/30) %>
 <% @turnover.costhire = one +  two + three %>
