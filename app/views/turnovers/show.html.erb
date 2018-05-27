@@ -32,8 +32,12 @@
 
 
 
-
-<%= @turnover.agancey_cost  %> <br>
-
+    <%= @turnover.agancey_cost  %> <br> |
+<%= @turnover.ads_cost %>|
+<%= @turnover.CostEads %>|
+<%= @turnover.costhire %>|
+<%=  @turnover.costadmin %>|
+<%=  @turnover.costadapt %> |
+<%= @turnover.loscontract %> 
 <%= link_to 'Edit', edit_turnover_path(@turnover) %> |
 <%= link_to 'Back', turnovers_path %>
