@@ -48,7 +48,7 @@
                                 <label for="icon_person"><%= t('manger_name') %></label>
                             </div>
                         </div>
-
+<!--
                         <div class="col s12">
                             <div class="input-field ">
                                 <i class="material-icons prefix">person</i>
@@ -56,7 +56,7 @@
 
                                 <label for="icon_person"><%= t('workers_number') %></label>
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="col s12">
                             <div class="input-field ">
@@ -75,19 +75,19 @@
                             </div>
                         </div>
 
-                        <div class="col s12">
+                        <!-- <div class="col s12">
                           <div class="input-field">
                           <%= f.collection_select :gender_id, Gender.all, :id, :name,  :prompt => "Choose your Gender" %>
 
    <label>Gender Select</label>
  </div>
 
-                           </div>
+                           </div> -->
 
-<div class="col s12">
+<!-- <div class="col s12">
   <div class="input-field">
   <!-- Switch -->
-   <div class="switch">
+   <!-- <div class="switch">
      <label>
        Off
        <input type="checkbox">
@@ -97,8 +97,21 @@
    </div>
  </div>
  </div>
+ -->
 
- <div class="col s12">
+ <div class="input-field">
+    <%= f.radio_button :workers, 1 %> <%= f.label :workers, "Female" %>
+    <%= f.radio_button :workers, 2 %> <%= f.label :workers, "Male" %>
+  </div>
+
+<div class="col s12">
+  <div class="input-field">
+    <%= f.collection_select :gender_id, Gender.all, :id, :name,  :prompt => "Choose your Gender" %>
+
+      <label>Materialize Select</label>
+    </div>
+</div>
+ <!-- <div class="col s12">
    <p>
      <label>
        <input name="group1" type="radio" checked />
@@ -123,7 +136,7 @@
        <span>Brown</span>
      </label>
    </p>
-</div>
+</div> -->
 
 
 
