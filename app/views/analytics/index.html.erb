@@ -19,12 +19,12 @@
     <% @turnovers.each do |turnover| %>
       <tr>
         <td><%= turnover.name_company %></td>
-        <td><%= turnover.users.city %> </td>
+        <td><%= turnover.user.city %> </td>
         <td>Sectors </td>
         <td>Reasons for quitting the jobs</td>
-        <td><%= turnover.users.workers %> </td>
+        <td><%= turnover.user.workers %> </td>
         <td><%= turnover.position %></td>
-        <td><%= turnover.turnover_ratio.to_i %></td>  
+        <td><%= turnover.turnover_ratio.to_i %></td>
       </tr>
     <% end %>
   </tbody>
