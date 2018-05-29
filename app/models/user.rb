@@ -7,7 +7,6 @@ class User < ApplicationRecord
  #INITIAL_ALLOWED_POSTS = 3
      has_many :turnovers
      has_many :posts
-     belongs_to :gender
   #   has_and_belongs_to_many  :promocodes
 # default value  attribute :credit, default: 0
 
