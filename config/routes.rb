@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :analytics, only: :index
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :posts
   resources :promocodes

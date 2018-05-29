@@ -1,0 +1,31 @@
+<h1>Analytics</h1>
+
+
+
+<table class="responsive-table">
+  <thead>
+    <tr>
+      <th>Name company</th>
+      <th> City</th>
+      <th> Sectors </th>
+      <th> Reasons for quitting the jobs </th>
+     <th>  Size of companies ( number of workers) </th>
+     <th> Job title of users </th>
+     <th> The jobs requested to calculate its cost of turnover </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @turnovers.each do |turnover| %>
+      <tr>
+        <td><%= turnover.name_company %></td>
+        <td><%= turnover.users.city %> </td>
+        <td>Sectors </td>
+        <td>Reasons for quitting the jobs</td>
+        <td><%= turnover.users.workers %> </td>
+        <td><%= turnover.position %></td>
+        <td><%= turnover.turnover_ratio.to_i %></td>  
+      </tr>
+    <% end %>
+  </tbody>
+</table>
