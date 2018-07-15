@@ -12,4 +12,12 @@
 //
 //= require rails-ujs
 //= require turbolinks
-//= require home/main4.js
+//= require jquery
+//= require home/jquery.easing.1.3.js
+//= require home/bootstrap.min.js
+//= require home/jquery.waypoints.min.js
+//= require home/owl.carousel.min.js
+//= require home/jquery.countTo.js
+//= require home/jquery.magnific-popup.min.js
+//= require home/magnific-popup-options.js
+//= require home/main.js
