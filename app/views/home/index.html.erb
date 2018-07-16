@@ -19,7 +19,34 @@
 				<div class="col-xs-8 text-right menu-1">
 					<ul>
 						<li class="active"><a href="index.html">Home</a></li>
-						<!-- <li><a href="about.html">About</a></li> --> 
+						<!-- <li><a href="about.html">About</a></li> -->
+
+						<% if user_signed_in? %>
+				 	 <li>
+				 		 <%= link_to t('logout'), destroy_user_session_path  , method: :delete %>
+				 	</li>
+				 	 <% else %>
+				 	 <li>
+				 	 <%= link_to t('signup'), new_user_registration_path  %>
+				  </li>
+
+				 <li>
+				 <%= link_to t('login'), new_user_session_path  %>
+				 </li>
+
+
+
+				 <% end %>
+				 <% if I18n.locale == I18n.default_locale %>
+				 <li>
+				 <%= link_to "عربي", '/ar' %>
+				 </li>
+				 <% else %>
+				 <li>
+				 <%= link_to "English", '/en' %>
+
+				 </li>
+				 <%end%>
 
 					</ul>
 				</div>
@@ -36,8 +63,13 @@
 					<div class="display-t">
 						<div class="display-tc">
 							<h1 class="animate-box" data-animate-effect="fadeInUp">How the tool will benefit you and protect you from loss</h1>
-							<h2 class="animate-box" data-animate-effect="fadeInUp">To see more detials Click <a href="#" target="_blank">Here</a></h2>
-							<p class="animate-box" data-animate-effect="fadeInUp"><a href="#" class="btn btn-white btn-lg btn-outline">Get In Touch</a></p>
+							<!-- <h2 class="animate-box" data-animate-effect="fadeInUp">To see more detials Click <a href="#" target="_blank">Here</a></h2> -->
+							<!-- <p class="animate-box" data-animate-effect="fadeInUp"><a href="#" class="btn btn-white btn-lg btn-outline">Get In Touch</a></p> -->
+							<% if user_signed_in? %>
+
+						   <%= link_to 'Get started now', new_turnover_path , class: "animate-box btn btn-white btn-lg btn-outline"  %>
+<% end %>
+
 						</div>
 					</div>
 				</div>
