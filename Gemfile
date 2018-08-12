@@ -38,6 +38,7 @@ gem 'material_icons'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'frontend-generators'
 gem 'rails_admin', '~> 1.2'
+gem "font-awesome-rails"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
