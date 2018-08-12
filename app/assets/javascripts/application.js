@@ -14,5 +14,5 @@
 //= require jquery_ujs
 //= require materialize
 //= require materialize-stepper.min.js
-
+//= require custom.js
 //= require main.js
