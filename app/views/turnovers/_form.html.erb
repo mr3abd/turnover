@@ -830,54 +830,54 @@
                             <!-- End tap -->
                             <!-- Start tap with form -->
                             <div class='tab'>
-                                <h1>Marketing cost</h1>
+                                <h1><%= t('markeing_cost') %></h1>
                                 <section>
                                     <!-- Recruimtment Agency Fee section -->
                                     <div class="row">
-                                        <p>Recruimtment Agency Fee</p>
+                                        <p><%= t('recruimtment_agency') %></p>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :agancey_cost, id: "turnover_agancey_cost"  %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>x1</label>
+                                            <label><%= t('egy') %> x1</label>
                                         </div>
 
                                     </div>
                                     <!-- Recrumitment Advertising section  -->
                                     <div class="row">
-                                        <p>Recrumitment Advertising</p>
+                                        <p><%= t('recruimtment_advertising') %></p>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :ads_cost, id: "turnover_ads_cost"  %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>x1</label>
+                                            <label><%= t('egy') %> x1</label>
                                         </div>
                                     </div>
                                     <!-- Social Media | For HR section -->
                                     <div class="row">
-                                        <p>Social Media | For HR</p>
+                                        <p><%= t('social_hr') %></p>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :sallary_HR, id: "turnover_sallary_HR"  %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>EGY</label>
+                                            <label><%= t('egy') %></label>
                                         </div>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :spentHR_timeH, id: "turnover_spentHR_timeH"  %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>Time</label>
+                                            <label><%= t('hours') %></label>
                                         </div>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :spentHR_timeD, id: "turnover_spentHR_timeD"  %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>Days</label>
+                                            <label><%= t('days') %></label>
                                         </div>
                                     </div>
                                 </section>
