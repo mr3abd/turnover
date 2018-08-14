@@ -886,79 +886,79 @@
 
                             <!-- Start tap with form -->
                             <div class='tab'>
-                                <h1>Interviewing Costs</h1>
+                                <h1><%= t('interviewing_costs') %></h1>
                                 <section>
                                     <div class="row">
-                                        <p> Interview 1 </p>
+                                        <p> <%= t('interview_1') %> </p>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :oneSallary_interviewer, id: "turnover_oneSallary_admin" %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>EGY</label>
+                                            <label><%= t('egy') %></label>
                                         </div>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :onespentinterview_timeD, id: "turnover_onespentinterview_timeD" %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>Days</label>
+                                            <label><%= t('days') %></label>
                                         </div>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :onespentinterview_timeH, id: "turnover_onespentinterview_timeH" %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>Hour</label>
+                                            <label><%= t('hour') %></label>
                                         </div>
                                     </div>
 
                                     <div class="row">
-                                        <p> Interview 2 </p>
+                                        <p> <%= t('interview_2') %> </p>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :twoSallary_interviewer, id: "turnover_twoSallary_interviewer" %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>EGY</label>
+                                            <label><%= t('egy') %></label>
                                         </div>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :twoSpentinterviewD, id: "turnover_twoSpentinterviewD" %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>Days</label>
+                                            <label><%= t('days') %></label>
                                         </div>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :twoSpentinterview_timeH, id: "turnover_twoSpentinterview_timeH"  %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>Hour</label>
+                                            <label><%= t('hour') %></label>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <p> Interview 3 </p>
+                                        <p><%= t('interview_3') %> </p>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :threeSallary_interviewer, id: "turnover_threeSallary_interviewer"  %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>EGY</label>
+                                            <label><%= t('egy') %></label>
                                         </div>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :threeSpentinterview_timeD, id: "turnover_threeSpentinterview_timeD"  %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>Days</label>
+                                            <label><%= t('days') %></label>
                                         </div>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :threeSpentinterview_timeH, id: "turnover_threeSpentinterview_timeH"  %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>Hour</label>
+                                            <label><%= t('hour') %></label>
                                         </div>
                                     </div>
                                 </section>
@@ -966,79 +966,79 @@
                             <!-- End tap -->
                             <!-- Start tap with form -->
                             <div class='tab'>
-                                <h1> Administration Cost </h1>
+                                <h1> <%= t('administration_cost') %> </h1>
                                 <section>
                                     <div class="row">
-                                        <p>  Admin 1   </p>
+                                        <p>  <%= t('admin_1') %>   </p>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :oneSallary_admin, id: "turnover_oneSallary_admin" %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>EGY</label>
+                                            <label><%= t('egy') %></label>
                                         </div>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :oneSpentAdmin_timeD, id: "turnover_oneSpentAdmin_timeD"  %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>Days</label>
+                                            <label><%= t('days') %></label>
                                         </div>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :oneSpentAdmin_timeH, id: "turnover_oneSpentAdmin_timeH"  %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>Hour</label>
+                                            <label><%= t('hour') %></label>
                                         </div>
                                     </div>
 
                                     <div class="row">
-                                        <p>  Admin 2   </p>
+                                        <p>  <%= t('admin_2') %>  </p>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :twoSallary_admin, id: "turnover_twoSallary_admin"  %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>EGY</label>
+                                            <label><%= t('egy') %></label>
                                         </div>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :twoSpentAdmin_timeD, id: "turnover_twoSpentAdmin_timeD"   %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>Days</label>
+                                            <label><%= t('days') %></label>
                                         </div>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :twoSpentAdmin_timeH, id: "turnover_twoSpentAdmin_timeH"  %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>Hour</label>
+                                            <label><%= t('hour') %></label>
                                         </div>
                                     </div>
                                  <div class="row">
-                                        <p>  Admin 3 </p>
+                                        <p>  <%= t('admin_3') %> </p>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :threeSallary_admin, id: "turnover_threeSallary_admin"  %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>EGY</label>
+                                            <label><%= t('egy') %></label>
                                         </div>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :threeSpentAdmin_timeD, id: "turnover_threeSpentAdmin_timeD"%>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>Days</label>
+                                            <label><%= t('days') %></label>
                                         </div>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :threeSpentAdmin_timeH, id: "turnover_threeSpentAdmin_timeH"%>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>Hour</label>
+                                            <label><%= t('hour') %></label>
                                         </div>
                                     </div>
 
@@ -1047,23 +1047,23 @@
                             <!-- End tap -->
                             <!-- Start tap with form -->
                             <div class='tab'>
-                                <h1>Supervision Costs During Hiring </h1>
+                                <h1><%= t('supervision_costs_during_hiring') %> </h1>
                                 <section>
                                  <div class="row">
-                                        <p>  Time </p>
+                                        <p>  <%= t('time') %> </p>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :spentSupervisor_timeD, id: "spentSupervisor_timeD"  %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>Days</label>
+                                            <label><%= t('days') %></label>
                                         </div>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :spentSupervisor_timeH, id: "spentSupervisor_timeH"  %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>Hour</label>
+                                            <label><%= t('hour') %></label>
                                         </div>
                                     </div>
                                 </section>
@@ -1072,90 +1072,90 @@
 
                             <!-- Start tap with form -->
                             <div class='tab'>
-                                <h1>Orientaion &amp; Training Costs </h1>
+                                <h1><%= t('orientaion_traning_costs') %> </h1>
                                 <section>
                                  <div class="row">
-                                        <p>  Employee  </p>
+                                        <p>  <%= t('employee') %>  </p>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :spentEmployee_timeD, id: "spentEmployee_timeD"   %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>Days</label>
+                                            <label><%= t('days') %></label>
                                         </div>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :spentEmployee_timeH, id: "turnover_spentEmployee_timeH" %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>Hour</label>
+                                            <label><%= t('hour') %></label>
                                         </div>
                                     </div>
                                  <div class="row">
-                                        <p>  Orientaion Officer </p>
+                                        <p>  <%= t('orientaion_officer') %> </p>
                                      <div class="col l6 small" >
-                                        <p>Sallary</p>
+                                        <p><%= t('sallary') %></p>
 
                                      </div>
                                      <div class="col l6 small" >
-                                        <p>Time</p>
+                                        <p><%= t('time') %></p>
 
                                      </div>
 
 
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :Sallary_adapt, id: "turnover_Sallary_adapt"  %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>EGY</label>
+                                            <label><%= t('egy') %></label>
                                         </div>
                                         <div class="input-field col l3 small">
                                             <input type="number">
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>Days</label>
+                                            <label><%= t('days') %></label>
                                         </div>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :spentadapt_timeH, id: "turnover_spentadapt_timeH"   %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>Hour</label>
+                                            <label><%= t('hour') %></label>
                                         </div>
                                     </div>
                                  <div class="row">
-                                        <p>  Training  </p>
+                                        <p>  <%= t('training') %>  </p>
 
                                     <div class="col l6 small" >
-                                        <p>Sallary</p>
+                                        <p><%= t('sallary') %></p>
 
                                      </div>
                                      <div class="col l6 small" >
-                                        <p>Time</p>
+                                        <p><%= t('time') %></p>
 
                                      </div>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :sallary_trainer, id: "turnover_sallary_trainer"   %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>EGY</label>
+                                            <label><%= t('egy') %></label>
                                         </div>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :spenttrain_timeD, id: "turnover_spenttrain_timeD" %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>Days</label>
+                                            <label><%= t('days') %></label>
                                         </div>
                                         <div class="input-field col l3 small">
-                                            <input type="number">
+                                          <%= form.number_field :spenttrain_timeH, id: "turnover_spenttrain_timeH" %>
                                             <a class="btn tooltipped" data-position="right" data-delay="50" data-tooltip="Info about smthing">
                                                 <i class="material-icons">info_outline</i>
                                             </a>
-                                            <label>Hour</label>
+                                            <label><%= t('hour') %></label>
                                         </div>
                                     </div>
                                 </section>
