@@ -1,17 +1,4 @@
 
-<%= form_with(model: turnover, local: true) do |form| %>
-  <% if turnover.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(turnover.errors.count, "error") %> prohibited this turnover from being saved:</h2>
-
-      <ul>
-      <% turnover.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
 
     <div class="row">
         <div class="col s12" id="current_state">
@@ -29,7 +16,19 @@
                     <div class="dots"></div>
                     <!--   Content area section  -->
                     <div class="content col s10">
-                        <form action="POST">
+
+                      <%= form_with(model: turnover, local: true) do |form| %>
+                        <% if turnover.errors.any? %>
+                          <div id="error_explanation">
+                            <h2><%= pluralize(turnover.errors.count, "error") %> prohibited this turnover from being saved:</h2>
+
+                            <ul>
+                            <% turnover.errors.full_messages.each do |message| %>
+                              <li><%= message %></li>
+                            <% end %>
+                            </ul>
+                          </div>
+                        <% end %>
                             <!-- Start tap with form -->
                             <div class='tab active'>
                                 <h1><%= t('main_data') %></h1>
