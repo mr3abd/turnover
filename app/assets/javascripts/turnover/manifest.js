@@ -12,4 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require materialize
+//= require materialize-stepper.min.js
 //= require turnover/custom.js
