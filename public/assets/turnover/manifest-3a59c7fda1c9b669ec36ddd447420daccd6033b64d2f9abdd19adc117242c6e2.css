@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,400i,700,900");
+/* line 6, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+.fix-clear {
+  clear: both;
+}
+
+/* line 10, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+.row {
+  margin-bottom: 0;
+}
+
+/* line 14, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #f7f7f7;
+  font-family: lato;
+}
+/* line 19, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+body #current_state div {
+  width: 50%;
+  margin: 19px auto;
+  background: #dedddd;
+  height: 30px;
+  border-radius: 7px;
+  position: relative;
+}
+/* line 26, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+body #current_state div p {
+  color: #FFF;
+  font-family: lato;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  margin: 0;
+  margin-top: 0px;
+  text-shadow: 2px 2px 5px #8c8a8a;
+}
+/* line 38, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+body #current_state div span {
+  position: absolute;
+  height: 30px;
+  background-color: #7f7f7f;
+  border-radius: 7px;
+  z-index: 1;
+}
+/* line 46, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+body #multi_stepID {
+  margin: 10px;
+}
+/* line 48, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+body #multi_stepID .content {
+  margin: 10px;
+  margin-left: 10px;
+  float: left;
+}
+/* line 54, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+body #multi_stepID .content .tab {
+  display: none;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  /*temporary properity Untill navbar be ready*/
+  margin-top: 50px;
+  margin-left: 5px;
+}
+/* line 61, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+body #multi_stepID .content .tab h1 {
+  margin: 0px;
+  font-size: 28px;
+  color: #333;
+  font-weight: bolder;
+}
+/* line 67, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+body #multi_stepID .content .tab section {
+  padding-left: 70px;
+  margin-top: 50px;
+}
+/* line 70, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+body #multi_stepID .content .tab section .input-field {
+  margin-bottom: 0px !important;
+  margin-top: 20px;
+}
+/* line 73, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+body #multi_stepID .content .tab section .input-field label {
+  width: auto;
+  font-size: 1.35rem !important;
+  font-weight: 300;
+  font-family: lato;
+}
+/* line 79, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+body #multi_stepID .content .tab section .input-field .tooltipped {
+  width: auto;
+  padding: 0;
+  position: relative;
+  padding-top: 10px;
+  background-color: inherit;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+/* line 86, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+body #multi_stepID .content .tab section .input-field .tooltipped i {
+  color: #283440;
+  font-size: 27px;
+  line-height: 0;
+}
+/* line 92, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+body #multi_stepID .content .tab section .input-field input {
+  outline: none;
+  font-family: lato;
+  font-size: 15px;
+  border-bottom: 1px solid #ccc;
+  width: 300px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  font-weight: 300;
+  font-style: italic;
+}
+/* line 103, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+body #multi_stepID .content .tab section .input-field p {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+/* line 108, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+body #multi_stepID .content .tab section .small input {
+  width: 80%;
+}
+/* line 113, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+body #multi_stepID .content .active {
+  display: block;
+  -webkit-transition: all 0.35 ease-in-out;
+  transition: all 0.35 ease-in-out;
+  -webkit-animation: animate 0.35s ease-in-out 0s 1 forwards;
+          animation: animate 0.35s ease-in-out 0s 1 forwards;
+}
+/* line 120, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+body #multi_stepID .dots {
+  float: left;
+  width: 27px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-45%);
+          transform: translateY(-45%);
+}
+/* line 127, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+body #multi_stepID .dots span {
+  display: block;
+  height: 10px;
+  width: 10px;
+  margin: 20px 7px;
+  background-color: #ab9090;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+/* line 137, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+body #multi_stepID .dots .light {
+  background-color: #424141;
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+/* line 148, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+body .info p {
+  text-align: right;
+  margin: 10px;
+  font-size: 40px;
+  color: #ccc;
+}
+/* line 153, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+body .info p span {
+  color: #424242;
+  text-decoration: underline;
+}
+/* line 159, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+body .footer {
+  height: 66px;
+  position: relative;
+}
+/* line 162, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+body .footer p {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+  /* line 176, /media/root/Data/apps/turnovers/app/assets/stylesheets/turnover/turnover-form.scss */
+  body .container #multi_stepID .content .tab section {
+    margin-left: 0px;
+  }
+}
+@-webkit-keyframes animate {
+  from {
+    opacity: 0;
+    left: -300px;
+    display: none;
+  }
+  to {
+    opacity: 1;
+    left: 0px;
+    display: block !important;
+  }
+}
+@keyframes animate {
+  from {
+    opacity: 0;
+    left: -300px;
+    display: none;
+  }
+  to {
+    opacity: 1;
+    left: 0px;
+    display: block !important;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+
+
+
+ */
+
