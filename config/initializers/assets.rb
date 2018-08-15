@@ -11,6 +11,7 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 Rails.application.config.assets.precompile += %w( personal/manifest.js personal/manifest.css )
 Rails.application.config.assets.precompile += %w( dashboard/manifest.js dashboard/manifest.css )
 Rails.application.config.assets.precompile += %w( home/manifest.js home/manifest.css )
+Rails.application.config.assets.precompile += %w( turnover/manifest.js turnover/manifest.css )
 
 Rails.application.config.assets.precompile += %w( rtl.css )
 # Precompile additional assets.
