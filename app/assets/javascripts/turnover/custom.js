@@ -132,9 +132,9 @@ $(document).ready(function() {
         $(this).addClass("counted")
         validInput++;
         $("#current_state div span").css("width",Math.ceil((validInput/input_num)*100)+"%");
-        $("#current_state div span").css("transition","all 0.35s ease-in-out");        
+        $("#current_state div span").css("transition","all 0.35s ease-in-out");
         $("#current_state div p").text(Math.ceil((validInput/input_num)*100)+"%");
-        
+
       }
       // console.log(validInput);
       if (n + 1 < length) {
