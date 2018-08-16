@@ -35,12 +35,15 @@ ar:
   name: "أسم"
   # Home
   head_title_home: "الأداة الأكثر فائدة لحساب تكلفة دورن العمالة"
-  bref_home: "وصف مختصر للتطبيق"
+  bref_home: "كيف ستفيدك الأداة وتحميك من الخسارة"
+  start_now: "أبدء الأن !"
 
-  name_app: "يُمكن"
+  name_app: "تكلفة دوران العمالة"
   login: "تسجيل الدخول"
   signup: "سجل"
   logout: " خروج"
+  home: "الرئيسية"
+  # Login users
   email: "البريد الإلكتروني"
   password: "كلمه السر"
   password_confirmation: "تأكيد الباسود"

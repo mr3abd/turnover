@@ -35,8 +35,10 @@ en:
   name: "Name"
 # Home Page
   head_title_home: "The most useful tool for Turnover"
-  bref_home: "Sweet beast cat mojo , yet spot something, big eyes, big eyes, crouch, shake butt, prepare to pounce sit."
-  name_app: "yomken system app"
+  bref_home: "How the tool will benefit you and protect you from loss."
+  name_app: "Turnover"
+  home: "Home"
+  start_now: "Start Now !"
 ######## User LOgin & SignUp #########
   login: "Login"
   signup: "SignUp"

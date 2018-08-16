@@ -14,11 +14,11 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-4 col-xs-12">
-					<div id="gtco-logo"><a href="index.html">TurnOver <em>.</em></a></div>
+					<div id="gtco-logo"><a href="index.html"><%= t('name_app') %> <em>.</em></a></div>
 				</div>
 				<div class="col-xs-8 text-right menu-1">
 					<ul>
-						<li class="active"><a href="index.html">Home</a></li>
+						<li class="active"><a href="index.html"><%= t('home') %></a></li>
 						<!-- <li><a href="about.html">About</a></li> -->
 
 						<% if user_signed_in? %>
@@ -62,12 +62,12 @@
 				<div class="col-md-12 col-md-offset-0 text-left">
 					<div class="display-t">
 						<div class="display-tc">
-							<h1 class="animate-box" data-animate-effect="fadeInUp">How the tool will benefit you and protect you from loss</h1>
+							<h1 class="animate-box" data-animate-effect="fadeInUp"><%= t('bref_home') %></h1>
 							<!-- <h2 class="animate-box" data-animate-effect="fadeInUp">To see more detials Click <a href="#" target="_blank">Here</a></h2> -->
 							<!-- <p class="animate-box" data-animate-effect="fadeInUp"><a href="#" class="btn btn-white btn-lg btn-outline">Get In Touch</a></p> -->
 							<% if user_signed_in? %>
 
-						   <%= link_to 'Get started now', new_turnover_path , class: "animate-box btn btn-white btn-lg btn-outline"  %>
+						   <%= link_to t('start_now'), new_turnover_path , class: "animate-box btn btn-white btn-lg btn-outline"  %>
                <% end %>
 
 						</div>
