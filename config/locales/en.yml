@@ -39,6 +39,11 @@ en:
   name_app: "Turnover"
   home: "Home"
   start_now: "Start Now !"
+
+
+## Turnover Features
+  turnover_features: "Turnover Features"
+  features_detials: "Some features of the tool to be used by your company."
 ######## User LOgin & SignUp #########
   login: "Login"
   signup: "SignUp"

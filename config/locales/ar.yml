@@ -43,6 +43,9 @@ ar:
   signup: "سجل"
   logout: " خروج"
   home: "الرئيسية"
+  # turnover_features
+  turnover_features: "  مميزات أداة تكلفة دوران العمالة"
+  features_detials: "بعض ميزات الأداة التي ستستخدمها شركتك."
   # Login users
   email: "البريد الإلكتروني"
   password: "كلمه السر"
