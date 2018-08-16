@@ -35,8 +35,11 @@
 				 </li>
 
 
-
 				 <% end %>
+				 <%  if current_user.productowner == true %>
+				 <%= link_to t('ProductOwner Dashbord'), analytics_url  %>
+				  <% end %>
+
 				 <% if I18n.locale == I18n.default_locale %>
 				 <li>
 				 <%= link_to "عربي", '/ar' %>
