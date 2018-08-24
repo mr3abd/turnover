@@ -44,6 +44,14 @@ en:
 ## Turnover Features
   turnover_features: "Turnover Features"
   features_detials: "Some features of the tool to be used by your company."
+  very_secure: "its tool very secure"
+  secure_detials: "Your data is protected and does not appear to anyone. "
+  save_money: "Will save a lot of Money"
+  money_detials: "The tool will protect you from significant losses in the cost of turnover"
+  more_flexibility: "It's More flexibility "
+  flexibility_detials: "It's too easy to use"
+  save_time: "Save your time"
+  time_detials: "Will not take a great time to calculate the cost of turnover"
 ######## User LOgin & SignUp #########
   login: "Login"
   signup: "SignUp"

@@ -25,6 +25,7 @@
 				 	 <li>
 				 		 <%= link_to t('logout'), destroy_user_session_path  , method: :delete %>
 				 	</li>
+
 				 	 <% else %>
 				 	 <li>
 				 	 <%= link_to t('signup'), new_user_registration_path  %>
@@ -36,7 +37,8 @@
 
 
 				 <% end %>
-				 <%  if current_user.productowner == true %>
+				 <%  if user_signed_in?  && current_user.productowner == true %>
+
 				 <%= link_to t('ProductOwner Dashbord'), analytics_url  %>
 				  <% end %>
 
@@ -122,8 +124,6 @@
 			<div class="row copyright">
 				<div class="col-md-12">
 					<p class="pull-left">
-						<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small>
-						<small class="block">Designed by <a href="http://gettemplates.co/" target="_blank">GetTemplates.co</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
 					</p>
 					<p class="pull-right">
 						<ul class="gtco-social-icons pull-right">
@@ -141,7 +141,7 @@
 	</div>
 
 	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+		<a href="#" class="js-gotop"><i class="fa fa-chevron-circle-up"></i></a>
 	</div>
 
 
