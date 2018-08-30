@@ -25,7 +25,11 @@
 				 	 <li>
 				 		 <%= link_to t('logout'), destroy_user_session_path  , method: :delete %>
 				 	</li>
+					<%  if  current_user.productowner == true %>
 
+ 				 <%= link_to t('ProductOwner Dashbord'), analytics_url  %>
+ 				  <% end %>
+					
 				 	 <% else %>
 				 	 <li>
 				 	 <%= link_to t('signup'), new_user_registration_path  %>
@@ -36,12 +40,10 @@
 				 </li>
 
 
-				 <% end %>
-				 <%  if user_signed_in?  && current_user.productowner == true %>
 
-				 <%= link_to t('ProductOwner Dashbord'), analytics_url  %>
-				  <% end %>
 
+
+          <% end %>
 				 <% if I18n.locale == I18n.default_locale %>
 				 <li>
 				 <%= link_to "عربي", '/ar' %>
