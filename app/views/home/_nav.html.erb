@@ -36,11 +36,11 @@
        <%= link_to t('login'), new_user_session_path  %>
        </li>
 
-
-
-
-
         <% end %>
+              <li>
+       <%= link_to "About Us", about_us_url %>
+
+       </li>
        <% if I18n.locale == I18n.default_locale %>
        <li>
        <%= link_to "عربي", '/ar' %>
@@ -51,10 +51,7 @@
 
        </li>
        <%end%>
-       <li>
-       <%= link_to "About Us", '/about-us' %>
 
-       </li>
         </ul>
       </div>
     </div>

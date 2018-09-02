@@ -11,7 +11,6 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require turbolinks
 //= require jquery
 //= require home/jquery.easing.1.3.js
 //= require home/bootstrap.min.js
