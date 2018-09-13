@@ -178,15 +178,9 @@ input::-webkit-input-placeholder {
 
 
           <div class="form-group">
-           <label for="sel1">Select list:</label>
-           <select class="form-control" id="sel1">
-             <option>1</option>
-             <option>2</option>
-             <option>3</option>
-             <option>4</option>
-           </select>
+           <label for="sel1">Select your city:</label>
+           <%= f.select(:city, [['Cairo', 'cairo'], ['Alex', 'alex']], {}, { :class => 'form-control' } ) %>
          </div>
-         <%= f.select(:city, [['Cairo', 'cairo'], ['Alex', 'alex']], { :class => 'form-control' } ) %>
         <div class="form-group">
             <label for="username" class="cols-sm-2 control-label">Gender </label>
             <div class="cols-sm-10">
