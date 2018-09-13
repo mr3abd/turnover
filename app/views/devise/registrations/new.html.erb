@@ -1,186 +1,243 @@
+<style>
+body, html{
+     height: 100%;
+ 	background-repeat: no-repeat;
+ 	background-color: #d3d3d3;
+ 	font-family: 'Oxygen', sans-serif;
+}
+
+.main{
+ 	margin-top: 70px;
+}
+
+h1.title {
+	font-size: 50px;
+	font-family: 'Passion One', cursive;
+	font-weight: 400;
+}
+
+hr{
+	width: 10%;
+	color: #fff;
+}
+
+.form-group{
+	margin-bottom: 15px;
+}
+
+label{
+	margin-bottom: 15px;
+}
+
+input,
+input::-webkit-input-placeholder {
+    font-size: 11px;
+    padding-top: 3px;
+}
+
+.main-login{
+ 	background-color: #fff;
+    /* shadows and rounded borders */
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+.main-center{
+ 	margin-top: 30px;
+ 	margin: 0 auto;
+ 	max-width: 330px;
+    padding: 40px 40px;
+
+}
+
+.login-button{
+	margin-top: 5px;
+}
+
+.login-register{
+	font-size: 11px;
+	text-align: center;
+}
+
+</style>
+
+
+
+
+<div class="container">
+  <div class="row main">
+    <div class="panel-heading">
+             <div class="panel-title text-center">
+                <h1 class="title">Company Name</h1>
+                <hr />
+              </div>
+          </div>
+    <div class="main-login main-center">
+
+
+
+
+
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
 
 
-
-
-
-
-
-<div  class="Sign_up">
-        <div class="content">
-            <h4 style="    text-align: center;    color: #26a69a !important;"><%= t('signup') %></h4>
-            <div class="row">
-                <form class="col s12">
-                    <div class="row">
-                        <div class="col s12">
-                            <div class="input-field ">
-                                <i class="material-icons prefix">person</i>
-                                <%= f.email_field :email, autofocus: true, id: :icon_person  %>
-
-                                <label for="icon_person"><%= t('email') %></label>
-                            </div>
-                        </div>
-                        <div class="col s12">
-                            <div class="input-field ">
-                                <i class="material-icons prefix">person</i>
-                                <%= f.text_field :name %>
-
-                                <label for="icon_person"><%= t('ur_name') %></label>
-                            </div>
-                        </div>
-                        <div class="col s12">
-                            <div class="input-field ">
-                                <i class="material-icons prefix">person</i>
-                                <%= f.text_field :name_company  %>
-
-                                <label for="icon_person"><%= t('company_name') %></label>
-                            </div>
-                        </div>
-
-                        <div class="col s12">
-                            <div class="input-field ">
-                                <i class="material-icons prefix">person</i>
-                                <%= f.text_field :name_manger_acc  %>
-
-                                <label for="icon_person"><%= t('manger_name') %></label>
-                            </div>
-                        </div>
-<!--
-                        <div class="col s12">
-                            <div class="input-field ">
-                                <i class="material-icons prefix">person</i>
-                                <%= f.text_field :workers  %>
-
-                                <label for="icon_person"><%= t('workers_number') %></label>
-                            </div>
-                        </div> -->
-
-                        <div class="col s12">
-                            <div class="input-field ">
-                                <i class="material-icons prefix">person</i>
-                                <%= f.text_field :jobpostion %>
-
-                                <label for="icon_person"><%= t('jobpostion') %></label>
-                            </div>
-                        </div>
-                        <div class="col s12">
-                            <div class="input-field ">
-                                <i class="material-icons prefix">person</i>
-                                <%= f.text_field :phone %>
-
-                                <label for="icon_person"><%= t('phone') %></label>
-                            </div>
-                        </div>
-
-
-
-<!-- <div class="col s12">
-  <div class="input-field">
-  <!-- Switch -->
-   <!-- <div class="switch">
-     <label>
-       Off
-       <input type="checkbox">
-       <span class="lever"></span>
-       On
-     </label>
-   </div>
- </div>
- </div>
- -->
-
- <div class="input-field">
-    <%= f.radio_button :workers, 1 %> <%= f.label :workers, "Female" %>
-    <%= f.radio_button :workers, 2 %> <%= f.label :workers, "Male" %>
-  </div>
-
-
- <!-- <div class="col s12">
-   <p>
-     <label>
-       <input name="group1" type="radio" checked />
-       <span>Red</span>
-     </label>
-   </p>
-   <p>
-     <label>
-       <input name="group1" type="radio" />
-       <span>Yellow</span>
-     </label>
-   </p>
-   <p>
-     <label>
-       <input class="with-gap" name="group1" type="radio"  />
-       <span>Green</span>
-     </label>
-   </p>
-   <p>
-     <label>
-       <input name="group1" type="radio" disabled="disabled" />
-       <span>Brown</span>
-     </label>
-   </p>
-</div> -->
-
-
-
-                        <div class="col s12">
-                            <div class="input-field ">
-                                <i class="material-icons prefix">person</i>
-                                <%= f.text_field :activity  %>
-
-                                <label for="icon_person"><%= t('activity') %></label>
-                            </div>
-                        </div>
-                        <div class="col s12">
-                            <div class="input-field ">
-                                <i class="material-icons prefix">person</i>
-                                <%= f.text_field :city  %>
-
-                                <label for="icon_person"><%= t('city') %></label>
-                            </div>
-                        </div>
-                        <div class="col s12">
-                            <div class="input-field ">
-                                <i class="material-icons prefix">lock</i>
-                                <% if @minimum_password_length %>
-                                <em style= "padding:50px;">(<%= @minimum_password_length %> <%= t('minimum_password_length') %>) </em>
-                                <% end %><br />
-                                <%= f.password_field :password, autocomplete: "off", id: :icon_lock  %>
-                                <label for="icon_lock"><%= t('password') %></label>
-                            </div>
-                        </div>
-
-
-
-
-                        <div class="col s12">
-                            <div class="input-field ">
-                                <i class="material-icons prefix">lock</i>
-                                <%= f.password_field :password_confirmation, autocomplete: "off", id: :icon_lock %>
-
-                                <label for="icon_lock"><%= t('password_confirmation') %></label>
-                            </div>
-                        </div>
-
-                        <div class="col s12">
-                            <div class="input-field ">
-                              <%= f.submit t('signup') , class:"waves-effect waves-light btn "  %>      |            <%= render "devise/shared/links" %>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                </form>
+          <div class="form-group">
+            <label for="name" class="cols-sm-2 control-label">Your Name</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                <input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
+              </div>
             </div>
-        </div>
-    </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="cols-sm-2 control-label">Your Email</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                <%= f.email_field :email, autofocus: true , class: "form-control" , placeholder: "Enter your Email" %>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="username" class="cols-sm-2 control-label">Your Name</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                <%= f.text_field :name , class: "form-control" , placeholder: t('ur_name') %>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="username" class="cols-sm-2 control-label">Company Name</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                <%= f.text_field :name_company , class: "form-control" , placeholder: t('company_name') %>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="username" class="cols-sm-2 control-label">Who will manage that account</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                <%= f.text_field :name_manger_acc , class: "form-control" , placeholder: t('company_name') %>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="username" class="cols-sm-2 control-label">What's your postion ? </label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                <%= f.text_field :jobpostion , class: "form-control" , placeholder: t('jobpostion') %>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="username" class="cols-sm-2 control-label">Phone </label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                <%= f.text_field :phone , class: "form-control" , placeholder: t('phone') %>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="username" class="cols-sm-2 control-label">Gender </label>
+            <div class="cols-sm-10">
+              <div class="input-field">
+             <%= f.radio_button :workers, "m" %><span class="option">Male<span></br>
+             <%= f.radio_button :workers, "f" %><span class="option">Female<span></br>
+
+               </div>
+
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="username" class="cols-sm-2 control-label">What's your Company activity </label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                <%= f.text_field :activity , class: "form-control" , placeholder: t('activity') %>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="username" class="cols-sm-2 control-label">What's your City </label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                <%= f.text_field :city , class: "form-control" , placeholder: t('city') %>
+
+              </div>
+            </div>
+          </div>
 
 
 
-    <% end %>
+
+
+          <div class="form-group">
+            <label for="password" class="cols-sm-2 control-label">Password</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+
+
+                  <% if @minimum_password_length %>
+                  <em>(<%= @minimum_password_length %> <%= t('minimum_password_length') %>) </em>
+                  <% end %><br />
+                  <%= f.password_field :password, autocomplete: "off", class: "form-control"  %>
+                           </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
+            <div class="cols-sm-10">
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control" %>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group ">
+            <%= f.button  t('signup') , class: "btn btn-primart btn-lg btn-block login-button" %>
+          </div>
+          <div class="login-register">
+              <%= render "devise/shared/links" %>
+               </div>
+               <% end %>
+
+
+
+  </div>
+</div>
+</div>
