@@ -89,15 +89,6 @@ input::-webkit-input-placeholder {
 
 
 
-          <div class="form-group">
-            <label for="name" class="cols-sm-2 control-label">Your Name</label>
-            <div class="cols-sm-10">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-                <input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
-              </div>
-            </div>
-          </div>
 
           <div class="form-group">
             <label for="email" class="cols-sm-2 control-label">Your Email</label>
@@ -137,7 +128,7 @@ input::-webkit-input-placeholder {
             <div class="cols-sm-10">
               <div class="input-group">
                 <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-                <%= f.text_field :name_manger_acc , class: "form-control" , placeholder: t('company_name') %>
+                <%= f.text_field :name_manger_acc , class: "form-control" , placeholder: "Who will manage that account" %>
 
               </div>
             </div>
@@ -165,16 +156,6 @@ input::-webkit-input-placeholder {
             </div>
           </div>
 
-          <div class="form-group">
-            <label for="username" class="cols-sm-2 control-label">What's your City </label>
-            <div class="cols-sm-10">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-                <%= f.text_field :city , class: "form-control" , placeholder: t('city') %>
-
-              </div>
-            </div>
-          </div>
 
 
           <div class="form-group">
