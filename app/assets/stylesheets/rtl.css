@@ -1,3 +1,32 @@
 body {
     font-family: 'Cairo', sans-serif !important;
+    direction: rtl;
+}
+
+
+/****   start Form_rtl    ****/
+body #multi_stepID .content .active{float: right}
+
+body #multi_stepID .dots{
+    position: relative;
+    float: right;
+    margin-top: 20%
+}
+
+body #multi_stepID .content .tab h1{float: right}
+
+body #multi_stepID .content .tab section .input-field{float: right}
+
+
+form p{float: right}
+
+
+/****   end Form_rtl    ****/
+
+/* Home */
+.text-right {
+    text-align: left;
+}
+.col-sm-4.col-xs-12 {
+  float: right;
 }
