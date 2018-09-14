@@ -1,3 +1,7 @@
+<% if current_user.admin == true %>
+
+
+
 <p id="notice"><%= notice %></p>
 
 <h1>Turnovers</h1>
@@ -123,3 +127,6 @@
 <br>
 
 <%= link_to 'New Turnover', new_turnover_path %>
+<% else %>
+Not found !!!
+<% end %>
