@@ -128,7 +128,7 @@ ActiveRecord::Schema.define(version: 20180814170222) do
     t.string "last_sign_in_ip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "credit"
+    t.integer "credit", default: 0
     t.string "name"
     t.string "name_company"
     t.string "activity"

@@ -1,3 +1,6 @@
+<% if current_user.productowner == true %>
+
+
 <h1>Analytics</h1>
 
 
@@ -29,3 +32,6 @@
     <% end %>
   </tbody>
 </table>
+ <% else%>
+<h1> Not Found ! </h1>
+<% end %>

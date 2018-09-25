@@ -2,7 +2,10 @@ body {
     font-family: 'Cairo', sans-serif !important;
     direction: rtl;
 }
-
+h1, h2, h3, h4, h5, h6, figure
+{
+  font-family: 'Cairo', sans-serif !important;
+}
 
 /****   start Form_rtl    ****/
 body #multi_stepID .content .active{float: right}
