@@ -1,33 +1,34 @@
 <% if current_user.productowner == true %>
 
 
-<h1>Analytics</h1>
 
+<div class="container">
+  <h2>Analytics For Product Owner</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name company</th>
+        <th>City</th>
+        <th>Size of companies</th>
+        <th>position </th>
+        <th>Turnovers Count </th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @turnovers.each do |turnover| %>
 
-
-<table class="responsive-table">
-  <thead>
-    <tr>
-      <th>Name company</th>
-      <th> City</th>
-     <th>  Size of companies ( number of workers) </th>
-     <th> Job title of users </th>
-     <th> The jobs requested to calculate its cost of turnover </th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @turnovers.each do |turnover| %>
       <tr>
         <td><%= turnover.name_company %></td>
-        <td><%= turnover.user.name %> </td>
+        <td><%= turnover.user.city %> </td>
         <td><%= turnover.user.workers %> </td>
         <td><%= turnover.position %></td>
-        <td><%= turnover.turnover_ratio.to_i %></td>
+        <td><%= @turnovers.count %></td>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+  <% end %>
+    </tbody>
+  </table>
+</div>
+
  <% else%>
 <h1> Not Found ! </h1>
 <% end %>
