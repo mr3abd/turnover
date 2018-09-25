@@ -162,17 +162,18 @@ input::-webkit-input-placeholder {
            <label for="sel1">Select your city:</label>
            <%= f.select(:city, [['Cairo', 'cairo'], ['Alex', 'alex']], {}, { :class => 'form-control' } ) %>
          </div>
-        <div class="form-group">
-            <label for="username" class="cols-sm-2 control-label">Gender </label>
+
+          <div class="form-group">
+            <label for="username" class="cols-sm-2 control-label">What's your Company activity </label>
             <div class="cols-sm-10">
-              <div class="input-field">
-             <%= f.radio_button :workers, "m" %><span class="option">Male<span></br>
-             <%= f.radio_button :workers, "f" %><span class="option">Female<span></br>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                <%= f.text_field :workers , class: "form-control" , placeholder: "number of workers" %>
 
-               </div>
-
+              </div>
             </div>
           </div>
+
 
           <div class="form-group">
             <label for="username" class="cols-sm-2 control-label">What's your Company activity </label>
