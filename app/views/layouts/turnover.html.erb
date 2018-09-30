@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
-
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/css/materialize.css'>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <%= stylesheet_link_tag 'turnover/manifest.css', media: 'all', 'data-turbolinks-track': 'reload' %>
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
      <% if I18n.locale.to_s == "ar" %>
      <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
@@ -28,8 +28,8 @@
   <body>
     <%= yield %>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/js/materialize.js'></script>
     <%= javascript_include_tag 'turnover/manifest.js', 'data-turbolinks-track': 'reload' %>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/js/materialize.js'></script>
 
   </body>
 </html>
